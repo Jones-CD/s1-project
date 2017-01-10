@@ -16,10 +16,7 @@ sampleApp.config(['$routeProvider',
       when('/accounts/register', {
 		templateUrl: 'templates/register.html',
 		controller: 'RegisterController'
-      }).
-      otherwise({
-		redirectTo: '/AddNewOrder'
-      });
+    });
 }]);
 
 
