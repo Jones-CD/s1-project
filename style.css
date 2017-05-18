@@ -1,3 +1,11 @@
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none!important;
+}
+
 html {
    font-size: 12px; /*declaring root element in pixels*/
 }
@@ -513,4 +521,3 @@ footer{
 	height: 50px;                  ---  doesn't work ??  ---- */
 
 }
-
