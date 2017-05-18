@@ -1,31 +1,101 @@
 <!DOCTYPE html>
 <head>
-    <title>Angular Todo</title>
+    <title>Angular Testing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
     <base href="/">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <!--<script src = "bower_components/angular/angular-route/angular-route.js"></script> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <style type="text/css">
-        body {
-            padding-top: 70px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--must come after Bootstrap link -->
+
+   
 </head>
 
-  <body ng-app="sampleApp">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#/">Angular Todo</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#/"> Home </a></li>
-                <li><a href="#/todo"> Todo </a></li>
-                <li><a href="#accounts/register"> Register </a></li>
-            </ul>
+<body ng-app="myBBFApp">
+
+    <div id="menu-icons">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        </nav>
-            <div ng-view></div>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+        <div id="mobile-banner">
+            <figure id="banner-logo"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="150">
+            </figure>
+        </div>  
+    
+        <!-- <figure id="mobile-holding"><img src="img/1.jpg" alt="Balloons in flight" width="800"></figure>  -->
+    
+
+    <nav class="navbar navbar navbar-fixed">
+        
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/"> Home </a></li>
+                <li><a href="/welcome"> Welcome </a></li>
+                <li><a href="/whatsOn"> What's on </a></li>
+                <li><a href="/bookFlight"> Book a flight </a></li>
+            </ul>
+        
+    </nav>
+        
+        <div ng-view>
+        <!-- This is our ng-view. The contents of the files in the templates directory are loaded here by Angular
+        when we click on the appropriate link. app.js decides which file is loaded. -->
+        </div>
+
+
+        <footer class="col-xs-12">
+                <div class="col-xs-6">
+                    <p class="footerblurb">Lorem ipsum dolor sit amet, consec tetur adip sicing elit, sed do eiusmod tempor incididunt ut labore et dolore veniam, quis nostrud exerc itation ullamco laboris nisi ut aliquip </p>
+               </div>
+
+              
+
+                <div class="col-xs-6">
+                    <p class="footerblurb">Dolor sit amet, adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+             
+                </div>
+
+            
+            <div id="horiz-rule" class="col-xs-12"></div>
+
+            
+            <div class="col-xs-12">
+             <h2>OUR SPONSORS</h2>
+
+                <div id="sponsor-logos">
+                    <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
+                </div>
+              </div>
+    
+          
+
+        </footer>
+
+        <div id="BBFcopyright">
+            <p >© Bristol Balloon Fiesta 2017</p>
+
+        </div>
+        
+
     <script src="js/app.js"></script>
-    <script src="js/controller.js"></script>
-  </body>
+    <!--<script src="js/controller.js"></script>  -->
+    <script type="text/javascript" src="js/my_script.js"></script>
+</body>
 </html>

@@ -1,0 +1,516 @@
+html {
+   font-size: 12px; /*declaring root element in pixels*/
+}
+
+ h1 {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem; /*displayed at 18px  */
+	letter-spacing: 0.25px;
+	color: #000099;
+	margin-bottom: 10px;
+	line-height: 1.15;
+}
+
+h2 {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem; /*displayed at 18px  */
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+p {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 100;
+	font-size: 1.35rem; /*displayed at 16px  */
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+
+span {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 700;
+}
+
+
+
+
+
+
+.header {
+	background-color: #000099;
+	width: 100%;
+	height: 400px;
+}
+
+.logo {
+	margin: auto;
+	width: 300px;
+}
+
+.header2 {
+	background-color: #000099;
+	width: 30%;
+	height: 400px;
+}
+
+
+#mobile-holding {       /* image */
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto; 
+	z-index: -1;
+	top: 150px;
+}
+
+/* ----------------------- NAV -----NAV -------------------*/
+
+nav {
+	position: absolute;
+	top: 150px;
+}
+
+#mobile-banner {          /* dark blue panel */
+	/*position: absolute;*/
+	background-color: #000099;
+	width: 100%;
+	height: 150px; 
+}
+
+#banner-logo {
+	padding: 25px 20px 0px 30px;
+	width: 20px;
+}
+
+nav {
+	display: none;
+}
+
+nav ul li a {
+     display: block;
+     text-decoration: none;
+     font-family: 'Mukta Vaani', sans-serif;
+     font-size: 1.45rem;
+     letter-spacing: 0.6px;
+     color: black;
+     text-align: center;
+     padding: 10px;
+}
+
+
+nav ul li {
+     font-size: 30px;
+     padding: 10px 5px;
+     background-color: #66ffcc;
+     border-bottom: 1px solid white;
+     width: 100%;
+     opacity: 0.8;
+     z-index: 99;
+}
+
+li.drop {
+	position: relative;
+}
+
+li.supp{
+	text-decoration: none;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 1.45rem;
+    letter-spacing: 0.6px;
+    color: black;
+    text-align: center;
+	display: none;
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+
+#menu-icons {
+	position: absolute;
+	top: 80px;
+	right: 25px;
+	z-index: 100;
+}
+
+#menu-icons div{
+	width: 35px;
+	height: 3px;
+	background-color: white;
+	margin-bottom: 7px;
+	border-radius: 1.5px;
+}
+
+.highlight-nav {
+	background-color: white;
+	opacity: 1;
+}
+
+.col-sm-1:last-child {
+	border-bottom: 1px solid white;
+}
+
+/* #logobox {
+	width: 80px;
+	height: 40px;
+	background-color: white;
+	border-radius: 2px;
+	padding: 10px;
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	color: #999999;
+	margin-bottom: 10px;
+	margin-right: 10px; 
+
+} */
+/*------------ Welcome page -------------------------------------------*/
+
+.container {
+	padding: 20px;
+	/*position: relative;*/
+}
+
+figure {
+	padding-bottom: 10px;
+}
+
+/* 
+#pullquote {
+	border: 1px solid #000099;
+	border-width: 1px 0px 1px 0px;
+	padding: 12px 0px 12px 0px;
+	margin: -10px 0px 5px 20px;
+	width: 130px;
+	position: absolute;
+	right: 20px;
+	top: 502px;
+	float: right;
+
+}
+
+
+
+#pullquote p{
+	color: #000099;
+	font-family: 'Holtwood One SC', serif;
+	font-size: 2rem;
+	text-align: center;
+	letter-spacing: 0.5px;
+	line-height: 1.1;
+}
+*/
+
+/*------------ What's On template----------------------------------------------------------*/
+
+panel-heading.panel-body p {        /* ! doesn't work ! */
+	text-decoration: none;
+	color: red;
+}
+
+span {                              /* bold time  */
+	font-weight: 700;
+	color: #000099;
+}
+
+strong { 
+    font-weight: bold;
+}
+
+h4.panel-title.panel-heading {      /* ! doesn't work ! */
+	text-decoration: none;
+}
+
+.down-arrow {                       /*  arrow div  */
+	position: absolute;
+	right: 20px;
+	top: 13px;
+}
+
+.down-arrow span {                  /*  arrow glyph  */
+	color: #bfbfbf;
+	font-size: 2rem;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+/*.panel_heading {
+	background-color: red;
+	height: 60px;
+	border-style: 1px solid black;
+	position: relative;
+}
+*/
+
+.panel-heading {
+	position: relative;
+}
+
+.panel-title {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 500;
+	font-size: 2.15rem;
+	color: #000099;
+	background-color: none;     /* ! doesn't work ! */
+	text-decoration: none;       /* ! doesn't work ! */
+	letter-spacing: 0.5px;
+	padding-top: 5px;
+
+}
+
+
+
+
+
+/* --------------Book a Flight template----------------------------------*/
+
+.container {
+	padding-top: 20px;
+}
+
+i-frame {
+	height: auto;
+	width: 100%;
+
+}
+
+#form-blurb p {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 500;
+	font-size: 1.0rem;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: black;
+	text-align: left;
+}
+
+#form-blurb {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 300;
+	font-size: 1.10rem;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: black;
+	text-align: left;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+input {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 100;
+	font-size: 1.0rem; /*displayed at 16px  */
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: black;
+	text-decoration: none;
+	margin-bottom: 15px; 
+}
+
+label {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 500;
+	font-size: 1.0rem; 
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: black;
+	text-decoration: none; 
+	margin-bottom: 3px;
+}
+
+#first label {           /*  this doesn't work  */
+	margin-top: 50px;
+}
+
+.dropdown {
+	margin-bottom: 10px;
+}
+
+button {
+	height: 45px;
+	width: 100%;
+	position: relative;
+}
+
+button.btn.btn-default:last-child {
+	color: #000099;
+	font-family: 'Holtwood One SC', serif;
+	font-size: 1.5rem;
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	background-color: #66ffcc;
+	margin-top: 20px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	border-radius: 10px;
+}
+
+li a {   /* dropdown menu items */
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 500;
+	font-size: 1.0rem;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: black;
+	text-decoration: none;
+	height: 40px;
+}
+
+#dropdownArrow {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	color: #bfbfbf;
+}
+
+
+/* ------------ aside ------------------------------------------*/
+
+
+#box {
+	width: 100%;
+	background-color: #ff3399;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+.aside-text {
+	padding: 30px 30px 10px 30px ;
+	width: 100%;
+}
+
+.aside-text p {
+	color: white;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+button {
+	background-color: #66ffcc;
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	margin-top: 10px; 
+}
+
+button a {
+	color: #000099;
+	font-family: 'Holtwood One SC', serif;
+	font-size: 2rem;
+	text-align: center;
+	padding-top: 4px;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+}
+
+#horizRule {
+	border-bottom: 1px solid white;
+	height: 1px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+
+.aside-text figure {
+	width: 250px;
+	height: auto;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+	-ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
+  	margin-bottom: 26px; 
+  	margin-right: auto;
+  	margin-left: auto;
+    border: 15px solid white;
+    background-color: white;
+}
+
+#first {
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	box-shadow: none;
+	border: none;
+	width: 100%;
+}
+
+
+
+/*------------ footer -------------------------------------------*/
+
+footer{
+         
+    padding: 20px 5px 0px 5px;
+    background-color: #999999;
+    width: 100%;
+    height: auto;
+       
+}
+
+#footer-box {
+	background-color: #999999;
+    width: 100%;
+}
+
+.footertext {
+	width: 300px;
+	font-size: 1.25rem;
+	display: inline-block;  
+	margin-right: 20px;
+}
+
+.footerblurb {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 500;
+	text-align: left;
+	line-height: 1.2;
+	color: white;
+}
+
+#horiz-rule {
+	background-color: white;
+	height: 1px;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+#sponsor-logos {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logobox {
+	background-color: white;
+	width: 100px;
+	height: 65px; 
+	margin: 10px;
+	padding: 20px 10px;
+	text-align: center;
+	color: #999999;
+	border-radius: 10px;
+}
+
+#BBFcopyright {
+	background-color: #000099;
+	color: white;
+	text-align: center;
+	width: 100%;
+/*	margin-top: 20px; 
+	letter-spacing: 0.25px;
+	height: 50px;                  ---  doesn't work ??  ---- */
+
+}
+

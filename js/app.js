@@ -1,22 +1,20 @@
 //Define an angular module for our app
-var sampleApp = angular.module('sampleApp', ['RouteControllers']);
 
-sampleApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-
-    when('/', {
-		templateUrl: 'templates/home.html',
-		controller: 'HomeController'
-	}).
-      when('/AddNewOrder', {
-		templateUrl: 'templates/add_order.html',
-		controller: 'AddOrderController'
-	}).
-      when('/accounts/register', {
-		templateUrl: 'templates/register.html',
-		controller: 'RegisterController'
+angular.module('myBBFApp', ['ngRoute']);
+ 
+angular.module('myBBFApp').config(function($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);  // Enable href routing without hashes
+ 
+    $routeProvider.when('/', {
+        templateUrl: 'templates/home.html'
+    })
+    .when('/welcome', {
+        templateUrl: 'templates/welcome.html'
+    })
+    .when('/whatsOn', {
+    	templateUrl: 'templates/whatsOn.html'
+    })
+    .when('/bookFlight', {
+        templateUrl: 'templates/bookFlight.html'
     });
-}]);
-
-
+});
