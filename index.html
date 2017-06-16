@@ -24,32 +24,60 @@
 
 <body ng-app="myBBFApp">
 
-    <div id="menu-icons">
+   <!-- <div id="menu-icons">
             <div></div>
             <div></div>
             <div></div>
-        </div>
+        </div> -->
 
-        <div id="mobile-banner">
+        <!--<div id="mobile-banner">
             <figure id="banner-logo"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="150">
             </figure>
-        </div>  
+        </div>  -->
     
-        <!-- <figure id="mobile-holding"><img src="img/1.jpg" alt="Balloons in flight" width="800"></figure>  -->
-    
-
-    <nav class="navbar navbar navbar-fixed">
+    <nav class="navbar navbar-default">     
         
-            
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/"> Home </a></li>
+            <div class="nav navbar-header">
+                <figure id="banner-logo"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="170">
+            </figure>
+
+                <button type="button" class="navbar-toggle collasped" 
+                    data-toggle="collapse" 
+                    data-target="#myCollapsingList">
+                    <!--creates collasped menu icon appearence-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>  <!--add id to link to button -->    
+            <ul id="myCollapsingList" class="nav navbar-nav 
+                                             collapse navbar-collapse">
+                 <li><a href="/"> Home </a></li>
                 <li><a href="/welcome"> Welcome </a></li>
                 <li><a href="/whatsOn"> What's on </a></li>
                 <li><a href="/bookFlight"> Book a flight </a></li>
+                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Parking</a></li>
+                        <li><a href="#">Directions</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        
+                    </ul>
+                </li>
+                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tickets</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Reserve</a></li>
+                        <li><a href="#">Purchase</a></li>
+                        
+                    </ul>
+                </li>
             </ul>
         
+    
     </nav>
-        
+
         <div ng-view>
         <!-- This is our ng-view. The contents of the files in the templates directory are loaded here by Angular
         when we click on the appropriate link. app.js decides which file is loaded. -->
@@ -83,20 +111,21 @@
         <div class="row">
 
             <div id="sponsor-logos">
-                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div id="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
+                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
             </div>
         </div>
 
-        <div id="BBFcopyright">
-            <p>© Bristol Balloon Fiesta 2017</p>
+        
+         </footer>
+         <div id="BBFcopyright">
+            <p>© Bristol Balloon Fiesta 2017 / Chris Jones</p>
 
         </div>
-         </footer>
         
 
     <script src="js/app.js"></script>
