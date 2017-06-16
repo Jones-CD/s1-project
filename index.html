@@ -24,22 +24,16 @@
 
 <body ng-app="myBBFApp">
 
-   <!-- <div id="menu-icons">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div> -->
-
-        <!--<div id="mobile-banner">
-            <figure id="banner-logo"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="150">
-            </figure>
-        </div>  -->
     
     <nav class="navbar navbar-default">     
         
-            <div class="nav navbar-header">
-                <figure id="banner-logo"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="170">
-            </figure>
+            <div class="nav navbar-header" >
+                <figure id="banner-logo" class="hidden-md hidden-lg">><a href="/"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="170"></a>
+                </figure>
+                <figure id="banner-logo" class="hidden-xs hidden-sm"><a href="/"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="220"></a>
+                </figure>
+                <!-- <figure id="banner-figure" class="hidden-xs hidden-sm"><img  src="img/16.jpg" alt="Balloons drifting past Clifton Suspension Bridge" height="250px">
+                </figure> -->
 
                 <button type="button" class="navbar-toggle collasped" 
                     data-toggle="collapse" 
@@ -49,23 +43,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            </div>  <!--add id to link to button -->    
+            </div> 
+
             <ul id="myCollapsingList" class="nav navbar-nav 
                                              collapse navbar-collapse">
-                 <li><a href="/"> Home </a></li>
-                <li><a href="/welcome"> Welcome </a></li>
-                <li><a href="/whatsOn"> What's on </a></li>
-                <li><a href="/bookFlight"> Book a flight </a></li>
-                 <li class="dropdown">
+                <li class="setwidth"><a href="/"> Home </a></li>
+                <li class="setwidth"><a href="/welcome"> Welcome </a></li>
+                <li class="setwidth"><a href="/whatsOn"> What's on </a></li>
+                <li class="setwidth"><a href="/bookFlight"> Book a flight </a></li>
+                <li class="setwidth dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information</a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Parking</a></li>
                         <li><a href="#">Directions</a></li>
                         <li><a href="#">Accessibility</a></li>
-                        
                     </ul>
                 </li>
-                 <li class="dropdown">
+                <li class="setwidth dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tickets</a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Reserve</a></li>
@@ -75,13 +69,14 @@
                 </li>
             </ul>
         
-    
     </nav>
 
-        <div ng-view>
+    
+
+    <div ng-view>
         <!-- This is our ng-view. The contents of the files in the templates directory are loaded here by Angular
         when we click on the appropriate link. app.js decides which file is loaded. -->
-        </div>
+    </div>
 
 
 
@@ -108,20 +103,25 @@
             <div class="col-xs-12">
              <h2>OUR SPONSORS</h2></div>
         </div>
+        <div class="container">
         <div class="row">
-
-            <div id="sponsor-logos">
-                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
-                <div class="logobox" class="col-xs-3"><p>LOGO</p></div>
-            </div>
+                <div class="col-xs-4 col-md-2"><div class="logobox"><p>LOGO</p></div></div>
+                <div class="col-xs-4 col-md-2"><div class="logobox"><p>LOGO</p></div></div>
+                <div class="col-xs-4 col-md-2"><div class="logobox"><p>LOGO</p></div></div>
+                <div class="hidden-xs hidden-sm col-md-2"><div class="logobox"><p>LOGO</p></div></div>
+                <div class="hidden-xs hidden-sm col-md-2"><div class="logobox"><p>LOGO</p></div></div>
+                <div class="hidden-xs hidden-sm col-md-2"><div class="logobox"><p>LOGO</p></div></div>
+        </div>
+        <div class="row top-buffer">
+                <div class="hidden-md hidden-lg col-xs-4"><div class="logobox"><p>LOGO</p></div></div>
+                <div class="hidden-md hidden-lg col-xs-4"><div class="logobox"><p>LOGO</p></div></div>
+                <div class="hidden-md hidden-lg col-xs-4"><div class="logobox"><p>LOGO</p></div></div>
+        </div>
         </div>
 
         
-         </footer>
+    </footer>
+
          <div id="BBFcopyright">
             <p>© Bristol Balloon Fiesta 2017 / Chris Jones</p>
 

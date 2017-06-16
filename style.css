@@ -1,3 +1,6 @@
+* {box-sizing: border-box;
+}
+
 a {
 	text-decoration: none;
 }
@@ -17,6 +20,7 @@ html {
 	letter-spacing: 0.25px;
 	color: #000099;
 	margin-bottom: 10px;
+	margin-top: 30px;
 	line-height: 1.15;
 }
 
@@ -28,15 +32,16 @@ h2 {
 	letter-spacing: 0.5px;
 	color: white;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 p {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 100;
-	font-size: 1.35rem; /*displayed at 16px  */
+	font-size: 1.5rem; /*displayed at 16px  */
 	line-height: 1.5;
 	letter-spacing: 0.5px;
+	padding-top: 15px;
 }
 
 span {
@@ -67,138 +72,32 @@ span {
 }
 
 
-#mobile-holding {       /* image */
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto; 
-	z-index: -1;
-	top: 150px;
-}
-
-/* -----------------------OLD NAV ----- OLD NAV -------------------*/
-
-/*nav {
-	position: absolute;
-	top: 150px;
-}
-
-#mobile-banner {          /* dark blue panel */
-	/*position: absolute;
-	background-color: #000099;
-	width: 100%;
-	height: 150px; 
-}
-
-#banner-logo {
-	padding: 25px 20px 0px 30px;
-	width: 20px;
-}
-
-nav {
-	display: none;
-}
-
-nav ul li a {
-     display: block;
-     text-decoration: none;
-     font-family: 'Mukta Vaani', sans-serif;
-     font-size: 1.45rem;
-     letter-spacing: 0.6px;
-     color: black;
-     text-align: center;
-     padding: 10px;
-}
 
 
-nav ul li {
-     font-size: 30px;
-     padding: 10px 5px;
-     background-color: #66ffcc;
-     border-bottom: 1px solid white;
-     width: 100%;
-     opacity: 0.8;
-     z-index: 99;
-}
-
-li.drop {
-	position: relative;
-}
-
-li.supp{
-	text-decoration: none;
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 1.45rem;
-    letter-spacing: 0.6px;
-    color: black;
-    text-align: center;
-	display: none;
-	background-color: white;
-	border-bottom: 1px solid black;
-}
-
-#menu-icons {
-	position: absolute;
-	top: 80px;
-	right: 25px;
-	z-index: 100;
-}
-
-#menu-icons div{
-	width: 35px;
-	height: 3px;
-	background-color: white;
-	margin-bottom: 7px;
-	border-radius: 1.5px;
-}
-
-.highlight-nav {
-	background-color: white;
-	opacity: 1;
-}
-
-.col-sm-1:last-child {
-	border-bottom: 1px solid white;
-}
-
-/* #logobox {
-	width: 80px;
-	height: 40px;
-	background-color: white;
-	border-radius: 2px;
-	padding: 10px;
-	font-family: 'Mukta Vaani', sans-serif;
-	font-weight: 700;
-	text-align: center;
-	color: #999999;
-	margin-bottom: 10px;
-	margin-right: 10px; 
-
-} */
+} 
 /* ----------------------- NEW NAV ----- NEW NAV -------------------*/
 .navbar {
 	border: none;
+	}
+
+.navbar-default .navbar-nav>li>a {
+	color: black;
 }
 
-.navbar-default {
-	background-color: transparent;
+nav.navbar {
+	margin-bottom: 0px;
 }
 
 .nav.navbar-header {
     background-color: #000099;
-    /*height: 170px;  */
+    height: 170px;
     width: 100%;
 }
 
-#mobile-banner {          /* dark blue panel */
-	position: absolute;
-	background-color: #000099;
-	width: 100%;
-	height: 150px; 
-}
 
 #banner-logo {
     padding: 30px 20px 0px 35px;
-    width: 20px;
+   
 }
 
 #myCollapsingList.nav  {
@@ -209,28 +108,25 @@ li.supp{
     color: black;
     text-align: center;
     padding: 0px;
-    background-color: #66ffcc;
     border-bottom: 1px solid white;
-    /*width: 100%;*/
     opacity: 0.8;
     margin-top: 0px;
-    /*height: 400px;*/
-    /*overflow: visible;*/
+    
 }
 
 .dropdown-menu {
     text-align: center; 
-    background-color: #66ffcc;
+    background-color: white;
     font-size: inherit;   
 }
 
-.navbar-toggle {           /* dropdown button */
-	margin-top: -0px;
+.navbar-toggle {          
+	margin-top: -45px;
 	margin-right: 30px;
 	border: none;
 }
 
-.navbar-default .navbar-toggle .icon-bar {   /* dropdown icons */
+.navbar-default .navbar-toggle .icon-bar {   
 	background-color: white;
 	width: 30px;
 	height: 3px;
@@ -238,21 +134,11 @@ li.supp{
 	border-radius: 1.5px;
 }
 
-#mobile-holding {       /* image */
-    position: absolute;
-    z-index: -1;
-    top: 100px;
-    left: -220px;
-    width: 100%;
-}
 
 li {
-    /*height: 50px;*/
     border-bottom: 1px solid white;
     padding-top: 10px;
-    /*width: 100%;*/
     background-color: #66ffcc;
-
 }
 
 li:hover {
@@ -265,50 +151,29 @@ a.dropdown-toggle {
 
 
 
+/*------------ Home page -------------------------------------------*/
+
+
+
+#mobile-holding-image { 
+	width: 100%;
+	
+}
+
+#carousel-BBF {
+	z-index: -99;
+}
 
 /*------------ Welcome page -------------------------------------------*/
 
-.container {
-	padding: 20px;
-	/*position: relative;*/
+#welcome-text {
+	padding: 30px 50px 50px 50px;
 }
 
-figure {
-	padding-bottom: 10px;
-}
-
-/* 
-#pullquote {
-	border: 1px solid #000099;
-	border-width: 1px 0px 1px 0px;
-	padding: 12px 0px 12px 0px;
-	margin: -10px 0px 5px 20px;
-	width: 130px;
-	position: absolute;
-	right: 20px;
-	top: 502px;
-	float: right;
-
-}
-
-
-
-#pullquote p{
-	color: #000099;
-	font-family: 'Holtwood One SC', serif;
-	font-size: 2rem;
-	text-align: center;
-	letter-spacing: 0.5px;
-	line-height: 1.1;
-}
-*/
 
 /*------------ What's On template----------------------------------------------------------*/
 
-panel-heading.panel-body p {        /* ! doesn't work ! */
-	text-decoration: none;
-	color: red;
-}
+
 
 span {                              /* bold time  */
 	font-weight: 700;
@@ -319,6 +184,10 @@ strong {
     font-weight: bold;
 }
 
+.panel panel-default {
+	padding: 100px;
+}
+
 h4.panel-title.panel-heading {      /* ! doesn't work ! */
 	text-decoration: none;
 }
@@ -326,7 +195,7 @@ h4.panel-title.panel-heading {      /* ! doesn't work ! */
 .down-arrow {                       /*  arrow div  */
 	position: absolute;
 	right: 20px;
-	top: 13px;
+	top: 16px;
 }
 
 .down-arrow span {                  /*  arrow glyph  */
@@ -334,29 +203,26 @@ h4.panel-title.panel-heading {      /* ! doesn't work ! */
 	font-size: 2rem;
 }
 
-.container {
+/*.container {
 	padding-top: 20px;
 }
-
-/*.panel_heading {
-	background-color: red;
+*/
+.panel-default > .panel-heading {
+	background-color: white;
 	height: 60px;
 	border-style: 1px solid black;
-	position: relative;
 }
-*/
 
+/*
 .panel-heading {
 	position: relative;
-}
+}*/
 
 .panel-title {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 500;
 	font-size: 2.15rem;
 	color: #000099;
-	background-color: none;     /* ! doesn't work ! */
-	text-decoration: none;       /* ! doesn't work ! */
 	letter-spacing: 0.5px;
 	padding-top: 5px;
 
@@ -368,14 +234,17 @@ h4.panel-title.panel-heading {      /* ! doesn't work ! */
 
 /* --------------Book a Flight template----------------------------------*/
 
-.container {
+/*.container {
 	padding-top: 20px;
+}*/
+
+video {
+	width:100%;
+	margin-bottom: 40px;
 }
 
-i-frame {
-	height: auto;
-	width: 100%;
-
+#videointro {
+	margin-bottom: 20px;
 }
 
 #form-blurb p {
@@ -422,91 +291,89 @@ label {
 	margin-bottom: 3px;
 }
 
-#first label {           /*  this doesn't work  */
-	margin-top: 50px;
-}
-
 .dropdown {
 	margin-bottom: 10px;
+	width: 100%;
 }
 
-/*button {          need to reinstate with new id or class
-	height: 45px;
-	width: 100%;
-	position: relative;
-}
-*/
-button.btn.btn-default:last-child {
-	color: #000099;
-	font-family: 'Holtwood One SC', serif;
-	font-size: 1.5rem;
-	text-align: center;
-	letter-spacing: 0.5px;
-	text-decoration: none;
-	background-color: #66ffcc;
-	margin-top: 20px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	border: none;
-	border-radius: 10px;
+.dropdown-menu booking {
+    text-align: center; 
+   font-size: inherit; 
+   background-color: white;  
 }
 
-li a {   /* dropdown menu items */
+.dropdown-menu {
+	left: 20px;
+	border-radius: 0px;
+	padding: 0px;
+	background-color: none;
+}
+
+.dropdown-menu li {
+	background-color: none;
+}
+
+li a {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 500;
-	font-size: 1.0rem;
+	font-size: 1.5rem;
 	line-height: 1.5;
 	letter-spacing: 0.5px;
 	color: black;
 	text-decoration: none;
-	height: 40px;
+	height: 50px;
 }
 
 #dropdownArrow {
 	position: absolute;
-	top: 15px;
-	right: 20px;
+	top: 28px;
+	right: 30px;
 	color: #bfbfbf;
+}
+
+button {
+	width: 100%;
 }
 
 
 /* ------------ aside ------------------------------------------*/
 
 
-#box {
-	width: 100%;
-	background-color: #ff3399;
-	height: auto;
-	padding-bottom: 30px;
-}
-
 .aside-text {
 	padding: 30px 30px 10px 30px ;
 	width: 100%;
+	background-color: #ff3399;
+	z-index: -99;
 }
 
 .aside-text p {
 	color: white;
 	font-weight: 700;
 	line-height: 1.25;
+	padding-top: 15px;
 }
 
-/*button {     need to reinstate with new id or class
+#bottombutt{
+	margin-bottom: 20px;
+}
+
+.action {
 	background-color: #66ffcc;
 	width: 100%;
 	height: 40px;
 	border-radius: 10px;
 	border: none;
 	margin-top: 10px; 
+	margin-left: auto;
+	margin-right: auto;
 }
-*/
+
 button a {
 	color: #000099;
 	font-family: 'Holtwood One SC', serif;
 	font-size: 2rem;
 	text-align: center;
-	padding-top: 4px;
+	padding-top: 5px;
 	letter-spacing: 0.5px;
 	text-decoration: none;
 }
@@ -519,14 +386,14 @@ button a {
 }
 
 
-.aside-text figure {
+#second {
 	width: 250px;
 	height: auto;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 	-ms-transform: rotate(3deg); /* IE 9 */
     -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
     transform: rotate(3deg);
-  	margin-bottom: 26px; 
+  	margin-bottom: 14px; 
   	margin-right: auto;
   	margin-left: auto;
     border: 15px solid white;
@@ -534,10 +401,6 @@ button a {
 }
 
 #first {
-	transform: rotate(0deg);
-	-ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-	box-shadow: none;
 	border: none;
 	width: 100%;
 }
@@ -547,18 +410,12 @@ button a {
 /*------------ footer -------------------------------------------*/
 
 footer{
-         
     padding: 20px 20px 20px 20px;
     background-color: #999999;
     width: 100%;
     height: auto;
-       
 }
 
-#footer-box {
-	background-color: #999999;
-    width: 100%;
-}
 
 .footerblurb {
 	font-family: 'Mukta Vaani', sans-serif;
@@ -585,22 +442,26 @@ footer{
 
 .logobox {
 	background-color: white;
-	width: 100px;
+	/*width: 100px;*/
 	height: 65px; 
-	margin: 10px;
+	/*margin: 10px;*/
 	padding: 20px 10px;
 	text-align: center;
 	color: #999999;
 	border-radius: 10px;
 }
 
+.top-buffer {
+	margin-top: 20px;
+}
+
 #BBFcopyright {
-	background-color: #000099;
+	background-color: gray;
 	color: white;
 	text-align: center;
 	width: 100%;
-	height: 40px;
-	padding-top: 9px; 
+	height: 50px;
+ 
 	
 }
 
@@ -608,4 +469,115 @@ footer{
 	letter-spacing: 0.45px;
 	font-weight: 300;
 	font-size: 1.2rem;
+}
+
+
+
+
+/* -------------------- MEDIA QUERIES ----------------------------------------------------------*/
+
+
+		/* For desktop: -----------------------------------------------------------------*/
+
+@media only screen and (min-width: 992px) {
+    
+    
+.nav.navbar-header {
+    background-color: #000099;
+    height: 250px;
+}
+
+#banner-figure {
+	display: inline-block;
+	right: 0px;
+	float: right;
+	margin-top: -148px;
+}
+
+.panel-body {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+}
+
+
+
+#banner-logo {
+	position: relative;
+    width: 100px;
+    top: 20px;
+    left: 100px;
+}
+
+#myCollapsingList {
+	width: 100%;
+}
+
+/*li.dropdown {
+	width: 16.6%;
+}*/
+
+.setwidth {
+	width: 16.66%;
+}
+
+li:hover {
+    background-color: white;
+}
+
+
+
+#welcome-text aside p {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+}
+
+.aside-text {
+	padding-right: 50px;
+}
+
+
+
+	/* For tablet: ---------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) { 
+    
+.setwidth {
+	width: 16.66%;
+}
+
+#aside-box {
+	float: right;
+	display: inline-block;
+}
+
+#welcome-text {
+	float: left;
+	display: inline-block;
+}
+
+.panel-body {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+}
+
+#welcome-text h1 {
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+
+#headingFlight {
+	font-size: 3.5rem;
+	font-weight: 300;
+	margin-top: 30px;
 }
