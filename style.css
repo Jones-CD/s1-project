@@ -124,6 +124,7 @@ nav.navbar {
 	margin-top: -45px;
 	margin-right: 30px;
 	border: none;
+	width: 50px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {   
@@ -162,6 +163,42 @@ a.dropdown-toggle {
 
 #carousel-BBF {
 	z-index: -99;
+}
+
+.item {
+	position: relative;
+}
+
+.item p {
+	position: absolute;
+	top: 400px;
+	left: 110px;
+	color: white;
+	letter-spacing: 2.25px;
+	font-size: 4.5rem;
+	font-weight: 200;
+	text-shadow: 0px 0px 20px black;
+}
+
+
+.carousel-inner div.item:nth-child(2) p {
+	top: 120px;
+	left: 110px;
+}
+
+.carousel-inner div.item:nth-child(3) p {
+	top: 220px;
+	left: 700px;
+}
+
+.carousel-inner div.item:nth-child(4) p {
+	top: 90px;
+	left: 400px;
+}
+
+.carousel-inner div.item:nth-child(5) p {
+	top: 120px;
+	left: 600px;
 }
 
 /*------------ Welcome page -------------------------------------------*/
@@ -424,6 +461,7 @@ footer{
 	text-align: left;
 	line-height: 1.2;
 	color: white;
+	width: 150px;
 }
 
 #horiz-rule {
@@ -435,6 +473,15 @@ footer{
 	margin-left: auto;
 	margin-right: auto; 
 }
+ 
+#vertcal-rule  {
+	background-color: white;
+	height: auto;
+	width: 1px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	
+}
 
 #sponsor-logos {
 	width: 90%;
@@ -442,13 +489,14 @@ footer{
 
 .logobox {
 	background-color: white;
-	/*width: 100px;*/
+	width: 100px;
 	height: 65px; 
-	/*margin: 10px;*/
+	margin: 10px;
 	padding: 20px 10px;
 	text-align: center;
 	color: #999999;
 	border-radius: 10px;
+	display: inline-block;
 }
 
 .top-buffer {
