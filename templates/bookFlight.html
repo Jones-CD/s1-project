@@ -54,10 +54,10 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
       >>>>data test (remove later) {{booking}} <<<<
         <label id="first" for="name" class="control-label">Name</label>
-        <input  id="name" class="form-control" placeholder="please enter your full name" autocomplete="on" ng-model="booking.name" ng-required="true" type="text"/>
+        <input  id="name" name="name" class="form-control" placeholder="please enter your full name" autocomplete="on" ng-model="booking.name" ng-required="true" type="text"/>
 
       >>>>data test (remove later)
-      $pristine - {{bookingForm.name.$pristine}},
+      $pristine: {{bookingForm.name.$pristine}},
       $dirty: {{bookingForm.name.$dirty}},
       $untouched: {{bookingForm.name.$untouched}},
       $touched: {{bookingForm.name.$touched}},
@@ -65,33 +65,76 @@
       $valid: {{bookingForm.name.$valid}}<<<<
       
         <div ng-show="bookingForm.name.$touched && bookingForm.name.$invalid">
-          <small style="color: red; display: block; text-align: center;">Enter a valid name</small>
+          <p class="invalid">Enter a valid name</p>
         </div>
       </div>
     
 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      <label for="email" class="control-label">Email</label>
-      <input id="email" class="form-control" placeholder="please enter your email address" autocomplete="on" ng-model="booking.email" ng-required="true" type="email"/>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+        <label for="email" class="control-label">Email</label>
+        <input id="email" name="email" class="form-control" placeholder="please enter your email address" autocomplete="on" ng-model="booking.email" ng-required="true" type="email"/>
+
+        <div ng-show="bookingForm.email.$touched && bookingForm.email.$invalid">
+            <p class="invalid">Enter a valid email address</p>
         </div>
+
+      >>>>data test (remove later)
+      $pristine: {{bookingForm.email.$pristine}},
+      $dirty: {{bookingForm.email.$dirty}},
+      $untouched: {{bookingForm.email.$untouched}},
+      $touched: {{bookingForm.email.$touched}},
+      $invalid: {{bookingForm.email.$invalid}},
+      $valid: {{bookingForm.email.$valid}}<<<<
+
+        
+      </div>
     </div><!--end row-->
 
     <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <label for="age" class="control-label">Age</label>
-        <input id="age" class="form-control" placeholder="please enter your age" autocomplete="on" ng-model="booking.age" ng-required="true" type="number" min="0" max="120"/>
+        <input id="age" name="age" class="form-control" placeholder="please enter your age" autocomplete="on" ng-model="booking.age" ng-required="true" type="number" min="0" max="120"/>
+
+        <div ng-show="bookingForm.age.$touched && bookingForm.age.$invalid">
+            <p class="invalid">Enter a valid age</p>
+        </div>
+
+        >>>>data test (remove later)
+      $pristine: {{bookingForm.age.$pristine}},
+      $dirty: {{bookingForm.age.$dirty}},
+      $untouched: {{bookingForm.age.$untouched}},
+      $touched: {{bookingForm.age.$touched}},
+      $invalid: {{bookingForm.age.$invalid}},
+      $valid: {{bookingForm.age.$valid}}<<<<
+
+         
+
     </div>
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
       <label for="telephone" class="control-label">Telephone</label>
-      <input id="phone" class="form-control" placeholder="please enter your main contact number" autocomplete="on" ng-model="booking.phone" ng-required="true" type="text" pattern="[0]{1}[0-9]{10}" title="Please use your full number, beginning with zero"/>
+      <input id="phone" name="phone" class="form-control" placeholder="please enter your main contact number" autocomplete="on" ng-model="booking.phone" ng-required="true" type="text" pattern="[0]{1}[0-9]{10}" title="Please use your full number, beginning with zero"/>
+
+      <div ng-show="bookingForm.phone.$touched && bookingForm.phone.$invalid">
+            <p class="invalid" >Enter a valid telephone number</p>
+        </div>
+
+        >>>>data test (remove later)
+      $pristine: {{bookingForm.phone.$pristine}},
+      $dirty: {{bookingForm.age.$dirty}},
+      $untouched: {{bookingForm.age.$untouched}},
+      $touched: {{bookingForm.age.$touched}},
+      $invalid: {{bookingForm.age.$invalid}},
+      $valid: {{bookingForm.age.$valid}}<<<<
+
+         
+
     </div>
     </div><!--end row-->
 
     <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        <!--<button class="action" id="bottombutt" class="col-xs-12 col-md-6" type="submit" class="btn btn-default"><a>SUBMIT</a></button> -->
-        <button type="submit" class="action" id="bottombutt" class="col-xs-12 col-md-6" class="btn btn-default" data-ng-disabled="registrationForm.$invalid"><a>SUBMIT</a></button>
+        <button type="submit" class="action" id="bottombutt" class="col-xs-12 col-md-6" class="btn btn-default" ng-disabled="bookingForm.$invalid" ng-controller="BookingController"><a>SUBMIT</a></button>
 
     </div>
     </div><!--end row-->

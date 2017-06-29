@@ -171,10 +171,10 @@ a.dropdown-toggle {
 
 .item p {
 	position: absolute;
-	top: 480px;
-	left: 260px;
+	top: 420px;
+	left: 160px;
 	color: white;
-	letter-spacing: 2.25px;
+	letter-spacing: 3.25px;
 	font-size: 4.5rem;
 	font-weight: 200;
 	text-shadow: 0px 0px 20px black;
@@ -190,6 +190,7 @@ a.dropdown-toggle {
 .carousel-inner div.item:nth-child(3) p {
 	top: 220px;
 	left: 700px;
+	letter-spacing: 10px;
 }
 
 .carousel-inner div.item:nth-child(4) p {
@@ -316,6 +317,25 @@ input {
 	color: black;
 	text-decoration: none;
 	margin-bottom: 15px; 
+}
+
+input [disabled="disabled"]{
+	opacity 0.4;
+	cursor: not-allowed!important;
+}
+
+
+.invalid {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 100;
+	font-size: 1.20rem; /*displayed at 16px  */
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: red;
+	text-decoration: none;
+	margin-bottom: 15px; 
+	margin-top: -20px;
+	text-align: center;
 }
 
 label {
