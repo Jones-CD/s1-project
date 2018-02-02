@@ -1,149 +1,122 @@
-<div class="container">
-  <h1 id="headingFlight">A different perspective</h1>
-  <p id="videointro">Ebis pedit ipit il magnam dolupta delenim illautem. Ita enime dolorat ioribus aped ut omnitiatem nam errum in nust, est fugitat ad ea et facea quature ndisquam dolorerit, ipsuntem ese volorecte la niendaerror reperum et excepro mil ipsant et </p>
-    
-  <video controls= "controls" 
+
+<div class="row" class="central-box">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7 col-lg-offset-1" id="content">
+       
+
+        <video controls= "controls" 
         preload= "none"   
         poster= "img/video-poster.png"> 
-        <source src="video/video.mp4" type="video/mp4"/>
-  </video>
+        	<source src="video/video.mp4" type="video/mp4">
+		    </video>
 
-
-
-<form name="bookingForm" data-ng-submit="submitForm()" novalidate>
-  <div class="form-group">
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="dropdown" >
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
-          <p>Choose the date<div id="dropdownArrow" class="glyphicon glyphicon-chevron-down"></div></p>
-          </button>
-          <ul class="dropdown-menu" class="booking" aria-labelledby="dropdownMenu1">
-            <li><a class="dateSelect" href="#">Friday 12 Aug</a></li>
-            <li><a class="dateSelect" href="#">Saturday 13 Aug</a></li>
-            <li><a class="dateSelect" href="#">Sunday 14 Aug</a></li>
-          </ul>
-        </div>
-
-        </div>
-      <span id="dateOfFlight"></span>
-   
-    
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="dropdown" class="dropdown" >
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            <p>Choose the time<div id="dropdownArrow" class="glyphicon glyphicon-chevron-down"></div></p>
-            </button>
-
-          <ul class="dropdown-menu" class="booking" aria-labelledby="dropdownMenu1">
-            <li><a class = "timeSelect" href="#"><p id="time1"></p></a></li>
-            <li><a class = "timeSelect" href="#"><p id="time2"></p></a></li>
-            <li><a class = "timeSelect" href="#"><p id="time3"></p></a></li>
-            <li><a class = "timeSelect" href="#"><p id="time4"></p></a></li>
-        </ul>
-      </div> 
-      <span id="timeOfFlight">{{selectedTime}}</span>
-    </div>
-     
-  </div> <!--end row-->
-
-
+    		  <h1>See us from a different perspective</h1>
+    		  <p id="videointro">Ebis pedit ipit il magnam dolupta delenim illautem. Ita enime dolorat ioribus aped ut omnitiatem nam errum in nust, est fugitat ad ea et facea quature ndisquam dolorerit, ipsuntem ese volorecte la niendaerror reperum et excepro mil ipsant et </p>
+        
   
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      >>>>data test (remove later) {{booking}} <<<<
-        <label id="first" for="name" class="control-label">Name</label>
-        <input  id="name" name="name" class="form-control" placeholder="please enter your full name" autocomplete="on" ng-model="booking.name" ng-required="true" type="text"/>
+  
+      <form name="bookingForm" ng-controller="myCtrl">
 
-      >>>>data test (remove later)
-      $pristine: {{bookingForm.name.$pristine}},
-      $dirty: {{bookingForm.name.$dirty}},
-      $untouched: {{bookingForm.name.$untouched}},
-      $touched: {{bookingForm.name.$touched}},
-      $invalid: {{bookingForm.name.$invalid}},
-      $valid: {{bookingForm.name.$valid}}<<<<
-      
-        <div ng-show="bookingForm.name.$touched && bookingForm.name.$invalid">
-          <p class="invalid">Enter a valid name</p>
+        <div class="dropdown">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p>
+                Friday 14th</p>
+                    <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="book"><a href="#">Time 1</a></li>
+                <li class="book"><a href="#">Time 2</a></li>
+                <li class="book"><a href="#">Time 3</a></li>
+              </ul>
+            </div>
         </div>
-      </div>
-    
+        <div class="dropdown">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p>
+                Saturday 15th</p>
+                    <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    </div>      
+                </button>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="book"><a href="#">Time 1</a></li>
+                <li class="book"><a href="#">Time 2</a></li>
+                <li class="book"><a href="#">Time 3</a></li>
+                <li class="book"><a href="#">Time 4</a></li>
+                <li class="book"><a href="#">Time 5</a></li>
 
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        <label for="email" class="control-label">Email</label>
-        <input id="email" name="email" class="form-control" placeholder="please enter your email address" autocomplete="on" ng-model="booking.email" ng-required="true" type="email"/>
+              </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p>
+                Sunday 16th</p>
+                <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </div>
+              </button>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="book"><a href="#">Time 1</a></li>
+                <li class="book"><a href="#">Time 2</a></li>
+                <li class="book"><a href="#">Time 3</a></li>
+              </ul>
+              </div>
+            </div>
+        <div id="spacer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
 
-        <div ng-show="bookingForm.email.$touched && bookingForm.email.$invalid">
-            <p class="invalid">Enter a valid email address</p>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <label for="name" class="control-label" >Name</label>
+              <input  id="name" name="name" class="form-control" placeholder="please enter your full name" autocomplete="on" ng-model="booking.name" ng-required="true" type="text">
+
+              <div ng-show="bookingForm.name.$touched && bookingForm.name.$invalid">
+                  <p class="invalid">Enter a valid name</p>
+              </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <label for="age" class="control-label">Age</label>
+              <input  id="age" name="age" class="form-control" placeholder="please enter your age" autocomplete="on" ng-model="booking.age" ng-required="true" type="number" min="10" max="120">
+
+              <div ng-show="bookingForm.age.$touched && bookingForm.age.$invalid">
+                  <p class="invalid">Enter a valid age</p>
+              </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <label for="email" class="control-label">Email address</label>
+              <input  id="email" name="email" class="form-control" placeholder="please enter your email address" autocomplete="on" ng-model="booking.email" ng-required="true" type="email">
+
+              <div ng-show="bookingForm.email.$touched && bookingForm.email.$invalid">
+                  <p class="invalid">Enter a valid email address</p>
+              </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <label for="phone" class="control-label">Telephone</label>
+              <input  id="phone" name="phone" class="form-control" placeholder="please enter your phone number" autocomplete="on" ng-model="booking.phone" ng-required="true" type="text" pattern="[0]{1}[0-9]{10}" title="Please use your full number, beginning with zero">
+
+              <div ng-show="bookingForm.age.$touched && bookingForm.age.$invalid">
+                  <p class="invalid">Enter a valid phone number</p>
+              </div>
         </div>
 
-      >>>>data test (remove later)
-      $pristine: {{bookingForm.email.$pristine}},
-      $dirty: {{bookingForm.email.$dirty}},
-      $untouched: {{bookingForm.email.$untouched}},
-      $touched: {{bookingForm.email.$touched}},
-      $invalid: {{bookingForm.email.$invalid}},
-      $valid: {{bookingForm.email.$valid}}<<<<
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <button class="book-flight-btn" type="submit" class="btn btn-default" ng-click="myFunc()"><a>SUBMIT</a></button>
+        </div>
 
         
-      </div>
-    </div><!--end row-->
-
-    <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        <label for="age" class="control-label">Age</label>
-        <input id="age" name="age" class="form-control" placeholder="please enter your age" autocomplete="on" ng-model="booking.age" ng-required="true" type="number" min="0" max="120"/>
-
-        <div ng-show="bookingForm.age.$touched && bookingForm.age.$invalid">
-            <p class="invalid">Enter a valid age</p>
-        </div>
-
-        >>>>data test (remove later)
-      $pristine: {{bookingForm.age.$pristine}},
-      $dirty: {{bookingForm.age.$dirty}},
-      $untouched: {{bookingForm.age.$untouched}},
-      $touched: {{bookingForm.age.$touched}},
-      $invalid: {{bookingForm.age.$invalid}},
-      $valid: {{bookingForm.age.$valid}}<<<<
-
-         
-
+          <div class="modal-thing" ng-click="myOtherFunc()">
+            <div class="modal-message" ng-click="myOtherFunc()">
+              <div id="click-away" class="glyphicon glyphicon-remove-circle"></div>
+              <img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="120">
+              <p><strong>Thank you for booking your balloon flight. We'll contact you soon with everything you'll need to know.</strong></p>
+            </div>
+          </div>
+        </form>
+     
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      <label for="telephone" class="control-label">Telephone</label>
-      <input id="phone" name="phone" class="form-control" placeholder="please enter your main contact number" autocomplete="on" ng-model="booking.phone" ng-required="true" type="text" pattern="[0]{1}[0-9]{10}" title="Please use your full number, beginning with zero"/>
-
-      <div ng-show="bookingForm.phone.$touched && bookingForm.phone.$invalid">
-            <p class="invalid" >Enter a valid telephone number</p>
-        </div>
-
-        >>>>data test (remove later)
-      $pristine: {{bookingForm.phone.$pristine}},
-      $dirty: {{bookingForm.age.$dirty}},
-      $untouched: {{bookingForm.age.$untouched}},
-      $touched: {{bookingForm.age.$touched}},
-      $invalid: {{bookingForm.age.$invalid}},
-      $valid: {{bookingForm.age.$valid}}<<<<
-
-         
-
-    </div>
-    </div><!--end row-->
-
-    <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        <button type="submit" class="action" id="bottombutt" class="col-xs-12 col-md-6" class="btn btn-default" ng-disabled="bookingForm.$invalid" ng-controller="bookingController"><a>SUBMIT</a></button>
-
-    </div>
-    </div><!--end row-->
-
+    <aside id="aside-box" class="col-xs-12 col-sm-4 col-md-4 col-lg-3"  ng-include="'templates/aside2.html'"></aside>
 
     
-    
- 
-      </div>  <!--end form group-->
-  </form>
+</div> <!--end row-->
 
-</div>  <!--end container-->
+

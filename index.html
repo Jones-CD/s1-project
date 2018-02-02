@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Bristol Balloon Fiesta 2017</title>
+    <title>Bristol Balloon Fiesta 2018</title>
     <link rel="icon" href="demo_icon.jpg" type="image/jpg" sizes="16x16">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
     <base href="/">
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <!--<script src = "bower_components/angular/angular-route/angular-route.js"></script> -->
 
@@ -54,16 +54,16 @@
                 <li class="setwidth dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Parking</a></li>
-                        <li><a href="#">Directions</a></li>
-                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="/parking">Parking</a></li>
+                        <li><a href="/directions">Directions</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
                     </ul>
                 </li>
                 <li class="setwidth dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tickets</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Reserve</a></li>
-                        <li><a href="#">Purchase</a></li>
+                        <li><a href="/reserve">Reserve</a></li>
+                        <li><a href="/purchase">Purchase</a></li>
                         
                     </ul>
                 </li>
@@ -81,67 +81,72 @@
 
 
 
-<footer>
-    <div class="row"> <!--MAIN outer row-->
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
-
-                <div class="row"> <!--inner row 6/6-->
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <p class="footerblurb">Address blurb<br>lorem ipsum dolor sit amet, consec tetur adip sicing elit, sed do eiusmod tempor incididunt ut labore et dolore veniam, quis nostrud exerc itation ullamco laboris nisi ut aliquip </p>
+    <footer>
+        <!-- <! <div class="container">
+            <div class="row"> <!MAIN outer row-->
+               <!--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3"> 
+ -->
+                           <!--  <div class="row"> <!inner row 6/6-->
+                               <!--  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <p class="footerblurb">Address blurb<br>lorem ipsum dolor sit amet, consec tetur adip sicing elit, sed do eiusmod tempor incididunt ut labore et dolore veniam, quis nostrud exerc itation ullamco laboris nisi ut aliquip </p>
+                                </div> -->
+                                <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <p class="footerblurb">Other blurb <br>olor sit amet, adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+                                </div> -->
+                            </div>  <!--end inner row 6/6-->
+                       <!--  </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <p class="footerblurb">Other blurb <br>olor sit amet, adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
-                    </div>
-                </div>  <!--end inner row 6/6-->
-        </div>
-        
-
-       <!--<div class="row">inner row SPONSORS/RULE
-            <div class="hidden-sm hidden-md hidden-lg">
-                <div id="horiz-rule" class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
-                    <h2>OUR SPONSORS</h2>
-                </div>
-                
-            </div>
-       </div> -->
-    
-        
-            
+                    </div> -->
             
 
-            <div class="row"> <!--inner row RULE/SPONSORS/LOGOS-->
-                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
-                    <div class="hidden-xs" id="vertical-rule"></div>
-                    <div>
-                        <h2>OUR SPONSORS</h2>
-                    </div>
+                <!-- <div class="row"> <!inner row RULE/SPONSORS/LOGOS-->
+                    <!-- <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                        <div class="hidden-xs" id="vertical-rule"></div>
+                        <div class="hidden-sm hidden-md hidden-lg" id="horiz-rule"></div> -->
                     
+                       <!--  <h2>OUR SPONSORS</h2> -->
+                        <!-- <div class="logobox"><p>LOGO</p></div>
                         <div class="logobox"><p>LOGO</p></div>
                         <div class="logobox"><p>LOGO</p></div>
                         <div class="logobox"><p>LOGO</p></div>
                         <div class="logobox"><p>LOGO</p></div>
                         <div class="logobox"><p>LOGO</p></div>
                         <div class="logobox"><p>LOGO</p></div>
-                        <div class="logobox"><p>LOGO</p></div>
-                        <div class="logobox"><p>LOGO</p></div> 
-                </div>
-            </div>
-      
+                        <div class="logobox"><p>LOGO</p></div>  -->
 
-    </div> <!--end outer row-->
+  <!---********************** new sponsor logo experiment *******************-->
 
-        
-</footer>
+               <!--          <ul class="logo-group">
+                            <li class="footer-logo">
+                                <img src="http://www.bristolballoonfiesta.co.uk/wp-content/uploads/2016/07/thatchers.png">
+                            </li>
+                             <li class="footer-logo">
+                                <img src="http://www.bristolballoonfiesta.co.uk/wp-content/uploads/2016/07/thatchers.png">
+                            </li>
+                             <li class="footer-logo">
+                                <img src="http://www.bristolballoonfiesta.co.uk/wp-content/uploads/2016/07/thatchers.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!end inner nest SPOSORS/LOGOS-->
+            <!-- </div> end outer row  -->
 
+        </div> 
          <div id="BBFcopyright">
             <p>© Bristol Balloon Fiesta 2017 / Chris Jones</p>
 
         </div>
+            
+    </footer>
+
+        
         
 
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
     <script type="text/javascript" src="js/my_script.js"></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

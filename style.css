@@ -13,14 +13,18 @@ html {
    font-size: 12px; /*declaring root element in pixels*/
 }
 
- h1 {
+body {
+	background-color: #ebe8e0;
+}
+
+h1 {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 700;
 	font-size: 2.5rem; /*displayed at 18px  */
 	letter-spacing: 0.25px;
 	color: #000099;
 	margin-bottom: 10px;
-	margin-top: 30px;
+	margin-top: 20px;
 	line-height: 1.15;
 }
 
@@ -38,7 +42,7 @@ h2 {
 p {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 100;
-	font-size: 1.5rem; /*displayed at 16px  */
+	font-size: 1.5rem; /*displayed at 18px  */
 	line-height: 1.5;
 	letter-spacing: 0.5px;
 	padding-top: 15px;
@@ -48,7 +52,6 @@ span {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 700;
 }
-
 
 
 
@@ -71,10 +74,19 @@ span {
 	height: 400px;
 }
 
+#content {
+	padding:20px 50px 50px 50px;
+	background-color: white;
+	margin-right:-15px;
+}
 
 
 
-} 
+
+
+
+
+
 /* ----------------------- NEW NAV ----- NEW NAV -------------------*/
 .navbar {
 	border: none;
@@ -110,8 +122,7 @@ nav.navbar {
     padding: 0px;
     border-bottom: 1px solid white;
     opacity: 0.8;
-    margin-top: 0px;
-    
+    margin-top: 0px;    
 }
 
 .dropdown-menu {
@@ -137,9 +148,10 @@ nav.navbar {
 
 
 li {
-    border-bottom: 1px solid white;
+    border-top: 1px solid white;
     padding-top: 10px;
     background-color: #66ffcc;
+    height: 60px;
 }
 
 li:hover {
@@ -149,6 +161,12 @@ li:hover {
 a.dropdown-toggle {
 	background-color: transparent;
 }
+
+
+
+
+
+
 
 
 
@@ -203,11 +221,19 @@ a.dropdown-toggle {
 	right: 70px;
 }
 
+
+
+
+
+
 /*------------ Welcome page -------------------------------------------*/
 
-#welcome-text {
-	padding: 30px 50px 50px 50px;
-}
+
+
+
+
+
+
 
 
 /*------------ What's On template----------------------------------------------------------*/
@@ -229,12 +255,12 @@ strong {
 
 .down-arrow {                       /*  arrow div  */
 	position: absolute;
-	right: 20px;
-	top: 16px;
+	right: 18px;
+	top: 17px;
 }
 
 .down-arrow span {                  /*  arrow glyph  */
-	color: #bfbfbf;
+	color: white;
 	font-size: 2rem;
 }
 
@@ -243,15 +269,16 @@ strong {
 }
 */
 .panel-default > .panel-heading {
-	background-color: white;
+	background-color: #66ffcc;
 	height: 60px;
 	border-style: 1px solid black;
+	padding-top: 13px;
 }
 
-/*
+
 .panel-heading {
 	position: relative;
-}*/
+}
 
 .panel-title {
 	font-family: 'Mukta Vaani', sans-serif;
@@ -269,6 +296,11 @@ strong {
 
 
 
+
+
+
+
+
 /* --------------Book a Flight template----------------------------------*/
 
 /*.container {
@@ -277,7 +309,7 @@ strong {
 
 video {
 	width:100%;
-	margin-bottom: 40px;
+	margin-top: 40px;
 }
 
 #videointro {
@@ -294,7 +326,7 @@ video {
 	text-align: left;
 }
 
-#form-blurb {
+/*#form-blurb {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 300;
 	font-size: 1.10rem;
@@ -304,7 +336,7 @@ video {
 	text-align: left;
 	margin-bottom: 30px;
 	margin-top: 30px;
-}
+}*/
 
 input {
 	font-family: 'Mukta Vaani', sans-serif;
@@ -348,16 +380,15 @@ label {
 }
 
 .dropdown {
-	margin-bottom: 10px;
-	width: 100%;
+	/*margin-bottom: 10px;*/
 }
 
-.dropdown-menu booking {
+/*.dropdown-menu booking {
     text-align: center; 
    font-size: inherit; 
    background-color: white;  
 }
-
+*/
 .dropdown-menu {
 	left: 20px;
 	border-radius: 0px;
@@ -369,7 +400,7 @@ label {
 	background-color: none;
 }
 
-li a {
+li.book a {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 500;
 	font-size: 1.5rem;
@@ -378,22 +409,156 @@ li a {
 	color: black;
 	text-decoration: none;
 	height: 50px;
+	text-align: left;
 }
 
-#dropdownArrow {
+/*#dropdownArrow {
 	position: absolute;
 	top: 28px;
 	right: 30px;
 	color: #bfbfbf;
+}*/
+
+.down-arrow-date span {                       /*  arrow div  */
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	color: white;
 }
 
-button {
+.book-flight-btn {
+	background-color: #66ffcc;
 	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	border: none;
+	margin-top: 10px; 
+	padding: 10px;
+	opacity: 0.5;
+}
+
+.book-flight-btn-valid {
+	opacity: 1.0;
 }
 
 input.ng-invalid.ng-touched {
 	border: 1px solid red;
 }
+
+.modal-thing{
+	position: fixed;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+	content: "";
+	background-color: rgba(255, 255, 255, 0.8);
+	display: none;
+	z-index: 98;
+}
+
+.look-at-me{
+	display: block;
+}
+
+.flexy-thing{
+	width: 100px;
+}
+
+.modal-message {
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+	height: auto;
+	width: 70%;
+	background-color: #000099;
+	color: #66ffcc;
+	z-index: 99;
+	border-radius: 4px;
+	text-align: center;
+	padding: 30px;
+}
+
+.modal-message p strong {
+	letter-spacing: 1.1px;
+	padding-top: 10px;
+}
+
+#click-away {                 /* removes modal message (balloon flight booked) */
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	font-size: 2rem;
+}
+
+#dropdownMenu1 {
+	height: 60px;
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: #66ffcc;
+	font-family: sans-serif;
+	/*width: 33%;*/
+	height: 60px;
+	color: #000099;
+	position: relative;
+	/*border: 2px solid white;*/
+	/*border-width: 0px 0px 2px 0px;*/
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+#dropdownMenu1 p {
+	font-weight: 500;
+	font-size: 2rem;
+	padding-top: 4px;
+	text-align: left;
+	padding-left: 8px;
+}
+
+li.book {
+	background-color: #abfdee;
+	padding: 10px;
+	border-top: 1px solid white;
+	font-family: sans-serif;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	padding-top: 17px;
+	position: relative;
+	top: -14px;
+	left: -20px;
+}
+
+li.book:hover {
+	background-color: white;
+}
+
+ul.dropdown-menu {
+	background-color: rgba(0, 0, 0, 0.0);   /* is it OK to do this?? */
+	border-style: none;
+	border-radius: 0px;
+	box-shadow: none;
+	position: relative;
+	width: 100%;
+}
+
+button.#dropdownMenu1:nth-child(3){
+	margin-bottom: 50px;
+}
+
+#spacer {
+	height: 40px;
+	/*background-color: red;*/
+}
+
+
+
+
+
 
 /* ------------ aside ------------------------------------------*/
 
@@ -419,12 +584,11 @@ input.ng-invalid.ng-touched {
 .action {
 	background-color: #66ffcc;
 	width: 100%;
-	height: 40px;
+	height: auto;
 	border-radius: 10px;
 	border: none;
 	margin-top: 10px; 
-	margin-left: auto;
-	margin-right: auto;
+	padding: 10px;
 }
 
 button a {
@@ -462,6 +626,8 @@ button a {
 #first {
 	border: none;
 	width: 100%;
+	/*padding-top: 54px;*/
+	padding-top:10px;
 }
 
 
@@ -475,7 +641,6 @@ footer{
     height: auto;
 }
 
-
 .footerblurb {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-size: 1.25rem;
@@ -484,6 +649,7 @@ footer{
 	line-height: 1.2;
 	color: white;
 	width: 150px;
+	padding-right: 10px;
 }
 
 #horiz-rule {
@@ -503,7 +669,7 @@ footer{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
-	
+
 }
 
 #sponsor-logos {
@@ -527,11 +693,10 @@ footer{
 }
 
 #BBFcopyright {
-	background-color: gray;
 	color: white;
 	text-align: center;
 	width: 100%;
-	height: 50px;
+	height: 30px;
  
 	
 }
@@ -540,115 +705,37 @@ footer{
 	letter-spacing: 0.45px;
 	font-weight: 300;
 	font-size: 1.2rem;
+	padding-top: 5px;
+
+
+
+
 }
+/* -------------------- new footer logo trial ----------------------------------------------------------*/
 
-
-
-
-/* -------------------- MEDIA QUERIES ----------------------------------------------------------*/
-
-
-		/* For desktop: -----------------------------------------------------------------*/
-
-@media only screen and (min-width: 992px) {
-    
-    
-.nav.navbar-header {
-    background-color: #000099;
-    height: 250px;
-}
-
-#banner-figure {
+li.footer-logo {
+	background-color: white;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
 	display: inline-block;
-	right: 0px;
-	float: right;
-	margin-top: -148px;
+	text-align: center;
+	margin: 10px;
+	border-radius: 4px;
 }
 
-.panel-body {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 30px; /* Firefox */
-    column-gap: 30px;
-}
-
-
-
-#banner-logo {
-	position: relative;
-    width: 100px;
-    top: 20px;
-    left: 100px;
-}
-
-#myCollapsingList {
+.footer-logo img {
 	width: 100%;
+	height: auto;
 }
 
-/*li.dropdown {
-	width: 16.6%;
-}*/
-
-.setwidth {
-	width: 16.66%;
-}
-
-li:hover {
-    background-color: white;
+.logo-group {
+	/*text-align: center; */
 }
 
 
 
-#welcome-text aside p {
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 30px; /* Firefox */
-    column-gap: 30px;
-}
-
-.aside-text {
-	padding-right: 50px;
-}
 
 
 
-	/* For tablet: ---------------------------------------------------------------------*/
-@media only screen and (min-width: 600px) { 
-    
-.setwidth {
-	width: 16.66%;
-}
 
-#aside-box {
-	float: right;
-	display: inline-block;
-}
-
-#welcome-text {
-	float: left;
-	display: inline-block;
-}
-
-.panel-body {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 30px; /* Firefox */
-    column-gap: 30px;
-}
-
-#welcome-text h1 {
-	font-size: 3.5rem;
-	font-weight: 300;
-}
-
-#headingFlight {
-	font-size: 3.5rem;
-	font-weight: 300;
-	margin-top: 30px;
-}
