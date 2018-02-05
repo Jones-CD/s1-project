@@ -24,29 +24,24 @@
 
 <body ng-app="myBBFApp">
 
-    
-    <nav class="navbar navbar-default">     
-        
-            <div class="nav navbar-header" >
-                <figure id="banner-logo" class="hidden-md hidden-lg">><a href="/"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="170"></a>
+    <nav class="navbar navbar-default">  
+        <div class="nav navbar-header" >
+                <figure id="banner-logo"><a href="/"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="170"></a>
                 </figure>
-                <figure id="banner-logo" class="hidden-xs hidden-sm"><a href="/"><img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="220"></a>
-                </figure>
-                <!-- <figure id="banner-figure" class="hidden-xs hidden-sm"><img  src="img/16.jpg" alt="Balloons drifting past Clifton Suspension Bridge" height="250px">
-                </figure> -->
-
-                <button type="button" class="navbar-toggle collasped" 
-                    data-toggle="collapse" 
-                    data-target="#myCollapsingList">
-                    <!--creates collasped menu icon appearence-->
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div> 
+        </div>
+            
+        <button type="button" class="navbar-toggle collasped" 
+            data-toggle="collapse" 
+            data-target="#myCollapsingList">
+            <!--creates collasped menu icon appearence-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="col-lg-10 col-lg-offset-1">
 
             <ul id="myCollapsingList" class="nav navbar-nav 
-                                             collapse navbar-collapse">
+                                collapse navbar-collapse">
                 <li class="setwidth"><a href="/"> Home </a></li>
                 <li class="setwidth"><a href="/welcome"> Welcome </a></li>
                 <li class="setwidth"><a href="/whatsOn"> What's on </a></li>
@@ -64,11 +59,12 @@
                     <ul class="dropdown-menu">
                         <li><a href="/reserve">Reserve</a></li>
                         <li><a href="/purchase">Purchase</a></li>
-                        
                     </ul>
                 </li>
             </ul>
-        
+        </div>
+        <!-- <div style="width: 50%; height: 60px; background-color: red; position: relative; top: 169px; "></div> -->
+
     </nav>
 
     

@@ -1,3 +1,11 @@
+
+
+/* ----------------------- ----------- -------------------------------------*/
+/* ----------------------- main / body -------------------------------------*/
+/* ----------------------- ----------- -------------------------------------*/
+
+
+
 * {box-sizing: border-box;
 }
 
@@ -23,7 +31,7 @@ h1 {
 	font-size: 2.5rem; /*displayed at 18px  */
 	letter-spacing: 0.25px;
 	color: #000099;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	margin-top: 20px;
 	line-height: 1.15;
 }
@@ -45,7 +53,6 @@ p {
 	font-size: 1.5rem; /*displayed at 18px  */
 	line-height: 1.5;
 	letter-spacing: 0.5px;
-	padding-top: 15px;
 }
 
 span {
@@ -85,15 +92,17 @@ span {
 
 
 
-
-
+/* ----------------------- ------- ----- ------- -------------------*/
 /* ----------------------- NEW NAV ----- NEW NAV -------------------*/
+/* ----------------------- ------- ----- ------- -------------------*/
+
 .navbar {
 	border: none;
 	}
 
 .navbar-default .navbar-nav>li>a {
 	color: black;
+	padding-top: 12px;
 }
 
 nav.navbar {
@@ -106,6 +115,10 @@ nav.navbar {
     width: 100%;
 }
 
+.navbar-default {
+	/*z-index: 95;*/
+	background-color: #66ffcc;
+}
 
 #banner-logo {
     padding: 30px 20px 0px 35px;
@@ -121,8 +134,13 @@ nav.navbar {
     text-align: center;
     padding: 0px;
     border-bottom: 1px solid white;
-    opacity: 0.8;
-    margin-top: 0px;    
+    /*opacity: 0.8;*/
+    margin-top: 0px;  
+    width: 100%;  
+}
+
+#myCollapsingList a:hover {
+	background-color: white;
 }
 
 .dropdown-menu {
@@ -154,23 +172,22 @@ li {
     height: 60px;
 }
 
+.dropdown-toggle a:active {
+	background-color: red;
+}
+
 li:hover {
     background-color: white;
 }
 
-a.dropdown-toggle {
-	background-color: transparent;
+li.setwith.dropdown.open a: {
+	background-color: red;
 }
 
 
-
-
-
-
-
-
-
+/*------------ --------- -------------------------------------------*/
 /*------------ Home page -------------------------------------------*/
+/*------------ --------- -------------------------------------------*/
 
 
 
@@ -189,8 +206,8 @@ a.dropdown-toggle {
 
 .item p {
 	position: absolute;
-	top: 100px;
-	left: 20px;
+	top: 70%;
+	left: 10%;
 	color: white;
 	letter-spacing: 3.25px;
 	font-size: 4.5rem;
@@ -206,37 +223,38 @@ a.dropdown-toggle {
 }
 
 .carousel-inner div.item:nth-child(3) p {
-	top: 220px;
-	right: 10%;
+	top: 40%;
+	left: 50%;
 	letter-spacing: 10px;
 }
 
 .carousel-inner div.item:nth-child(4) p {
 	top: 90px;
-	left: 400px;
+	left: 30%;
 }
 
 .carousel-inner div.item:nth-child(5) p {
-	top: 120px;
-	right: 70px;
+	top: 20%;
+	right: 40px;
 }
 
 
 
 
-
-
+/*------------ ------------ -------------------------------------------*/
 /*------------ Welcome page -------------------------------------------*/
+/*------------ ------------ -------------------------------------------*/
+
+
+#welcome-pic {
+	margin-bottom: 20px;
+}
 
 
 
-
-
-
-
-
-
-/*------------ What's On template----------------------------------------------------------*/
+/*------------ ------------------ ----------------------------------------------------------*/
+/*------------ What's On template ----------------------------------------------------------*/
+/*------------ ------------------ ----------------------------------------------------------*/
 
 
 
@@ -297,11 +315,9 @@ strong {
 
 
 
-
-
-
-
-/* --------------Book a Flight template----------------------------------*/
+/* -------------- ---------------------- ----------------------------------*/
+/* -------------- Book a Flight template ----------------------------------*/
+/* -------------- ---------------------- ----------------------------------*/
 
 /*.container {
 	padding-top: 20px;
@@ -390,15 +406,18 @@ label {
 }
 */
 .dropdown-menu {
-	left: 20px;
 	border-radius: 0px;
 	padding: 0px;
 	background-color: none;
+	top: 0px;
 }
 
-.dropdown-menu li {
+/*.dropdown-menu li {
 	background-color: none;
-}
+	position: relative;
+	top: -49px;
+	left: -20px;
+}*/
 
 li.book a {
 	font-family: 'Mukta Vaani', sans-serif;
@@ -530,7 +549,6 @@ li.book {
 	padding-top: 17px;
 	position: relative;
 	top: -14px;
-	left: -20px;
 }
 
 li.book:hover {
@@ -558,9 +576,9 @@ button.#dropdownMenu1:nth-child(3){
 
 
 
-
-
+/* ------------ ----- ------------------------------------------*/
 /* ------------ aside ------------------------------------------*/
+/* ------------ ----- ------------------------------------------*/
 
 
 .aside-text {
@@ -583,12 +601,17 @@ button.#dropdownMenu1:nth-child(3){
 
 .action {
 	background-color: #66ffcc;
-	width: 100%;
+	width: 60%;
 	height: auto;
 	border-radius: 10px;
 	border: none;
-	margin-top: 10px; 
+	margin-top: 35px;
 	padding: 10px;
+
+	position: relative;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+
 }
 
 button a {
@@ -632,7 +655,12 @@ button a {
 
 
 
-/*------------ footer -------------------------------------------*/
+
+
+
+/*---------------------- ------ -------------------------------------------*/
+/*---------------------- footer -------------------------------------------*/
+/*---------------------- ------ -------------------------------------------*/
 
 footer{
     padding: 20px 20px 20px 20px;
@@ -735,6 +763,126 @@ li.footer-logo {
 
 
 
+
+/*******************************************************************************************/
+
+
+
+
+/* -------------------- ------------- ----------------------------------------------------------*/
+/* -------------------- MEDIA QUERIES ----------------------------------------------------------*/
+/* -------------------- ------------- ----------------------------------------------------------*/
+
+
+/* For tablet: ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) { 
+    
+.setwidth {
+	width: 16.66%;
+}
+
+.setwidth.dropdown {
+	width: 16.66%;
+}
+
+#aside-box {
+	/*float: right;*/
+	display: inline-block;
+}
+
+#welcome-text {
+	float: left;
+	display: inline-block;
+}
+
+.panel-body {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+}
+
+.central-box {
+	margin-left: auto;
+	margin-right: auto; 
+	background-color: white; 
+	padding-top: 40px;
+}
+
+.action {
+	width: auto;
+}
+
+#banner-logo {
+	position: relative;
+    left: 20%;
+}
+
+}
+
+
+/* -----------For desktop: -----------------------------------------------------------------*/
+
+/* -----------For desktop: -----------------------------------------------------------------*/
+
+/* -----------For desktop: -----------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 992px) {
+    
+    
+body {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.central-box {
+	width:80%;
+	margin-left: auto;
+	margin-right: auto; 
+	background-color: white; 
+	padding-top: 40px;
+}
+
+.panel-body {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+}
+
+
+#banner-logo {
+	position: relative;
+    width: 100px;
+    left: 150px;
+}
+
+#myCollapsingList {
+	width: 100%;
+}
+
+li.dropdown {
+	width: 16.6%;
+}
+
+.setwidth {
+	width: 16.66%;
+}
+
+.aside-text {
+	padding-top: 50px;
+}
+
+/*booking page------------------------------------------------*/
+
+}
+
+} /* keep this one! */
 
 
 
