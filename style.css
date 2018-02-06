@@ -239,8 +239,6 @@ li.setwith.dropdown.open a: {
 }
 
 
-
-
 /*------------ ------------ -------------------------------------------*/
 /*------------ Welcome page -------------------------------------------*/
 /*------------ ------------ -------------------------------------------*/
@@ -373,14 +371,14 @@ input [disabled="disabled"]{
 
 .invalid {
 	font-family: 'Mukta Vaani', sans-serif;
-	font-weight: 100;
+	font-weight: 500;
 	font-size: 1.20rem; /*displayed at 16px  */
 	line-height: 1.5;
 	letter-spacing: 0.5px;
 	color: red;
 	text-decoration: none;
+	margin-top: -10px;
 	margin-bottom: 15px; 
-	margin-top: -20px;
 	text-align: center;
 }
 
@@ -480,9 +478,9 @@ input.ng-invalid.ng-touched {
 	display: block;
 }
 
-.flexy-thing{
+/*.flexy-thing{
 	width: 100px;
-}
+}*/
 
 .modal-message {
 	position: absolute;
@@ -502,6 +500,10 @@ input.ng-invalid.ng-touched {
 .modal-message p strong {
 	letter-spacing: 1.1px;
 	padding-top: 10px;
+}
+
+#modal-logo {
+	margin-bottom: 20px;
 }
 
 #click-away {                 /* removes modal message (balloon flight booked) */
@@ -573,8 +575,20 @@ button.#dropdownMenu1:nth-child(3){
 	/*background-color: red;*/
 }
 
+select {
+	margin-bottom: 15px;
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem; /*displayed at 18px  */
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
 
 
+/*  hides day/date selects once one is active   */
+.sT2-hide {
+	display: none;
+}
 
 /* ------------ ----- ------------------------------------------*/
 /* ------------ aside ------------------------------------------*/

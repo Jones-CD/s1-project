@@ -16,7 +16,101 @@
   
       <form name="bookingForm" ng-controller="myCtrl">
 
-        <div class="dropdown">
+         <!-- <div>
+            <select ng-model="booking.datetime" class="form-control">
+              <option value="">Friday 14th</option>
+              <option>08.30</option>
+              <option>09.30</option>
+              <option>10.30</option>
+            </select>
+        </div> 
+
+         >>>>data test (remove later)
+      $pristine: {{bookingForm.date/time.$pristine}},
+      $dirty: {{bookingForm.date/time.$dirty}},
+      $untouched: {{bookingForm.date/time.$untouched}},
+      $touched: {{bookingForm.date/time.$touched}},
+      $invalid: {{bookingForm.date/time.$invalid}},
+      $valid: {{bookingForm.date/time.$valid}},
+      $not-empty: {{bookingForm.date/time.$not-empty}}<<<<
+      <br>
+      <br> -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+          <select ng-model="selectedTime" ng-options="x for x in FriTimes" class="form-control" class="booktime">
+            <option value=""><p>Friday 14th</p></option>
+          </select>
+        </div>
+
+        <!-- <div ng-hide="selectedTime">
+                  <p class="invalid">Enter a valid name</p>
+              </div> -->
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" class="sT2"> 
+          <select ng-model="selectedTime2" ng-options="x for x in SatTimes" class="form-control">
+            <option value=""><p>Saturday 15th</p></option>
+          </select>
+        </div>
+
+         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+          <select ng-model="selectedTime3" ng-options="x for x in SunTimes" class="form-control">
+            <option value=""><p>Sunday 16th</p></option>
+          </select>
+        </div>
+        
+      </div>
+      
+      
+      <div ng-show="selectedTime">
+      <p>You have selected {{ selectedTime }} on Friday 14th August 2017</p></div>
+      <div ng-show="selectedTime2">
+      <p>You have selected {{ selectedTime2 }} on Saturday 15th August 2017</p></div>
+      <div ng-show="selectedTime3">
+      <p>You have selected {{ selectedTime3 }} on Sunday 16th August 2017</p></div>
+      <br>
+      <!-- >>>>data test (remove later)
+      $pristine: {{bookingForm.selectedTime.$pristine}},
+      $dirty: {{bookingForm.selectedTime.$dirty}},
+      $untouched: {{bookingForm.selectedTime.$untouched}},
+      $touched: {{bookingForm.selectedTime.$touched}},
+      $invalid: {{bookingForm.selectedTime.$invalid}},
+      $valid: {{bookingForm.selectedTime.$valid}},
+      $not-empty: {{bookingForm.selectedTime.$not-empty}}<<<< -->
+       <!--  <div>
+            <select ng-model="selectedDate2" ng-style="myObj">
+              <option value="">Saturday 15th</option>
+              <option>08.30</option>
+              <option>09.30</option>
+              <option>10.30</option>
+            </select>
+        </div> 
+        <div>
+            <select ng-model="selectedDate2" ng-style="myObj">
+              <option value="">Sunday 16th</option>
+              <option>08.30</option>
+              <option>09.30</option>
+              <option>10.30</option>
+            </select>
+        </div>  -->
+
+        <br>
+        <div ng-show="booking.datetime.$not-empty" >
+          <span id="dateOfFlight">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
+        </div>
+          <br>
+        <!-- <div>
+          <select ng-model="selectedTime" ng-style="myObj">
+            <option value="">Choose a time</option>
+            <option>08.30</option>
+            <option>09.30</option>
+            <option>10.30</option>
+          </select>
+           <span id="dateOfFlight">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
+        </div>  -->
+
+    
+
+      <!--   <div class="dropdown">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p>
                 Friday 14th</p>
@@ -61,7 +155,7 @@
               </ul>
               </div>
             </div>
-        <div id="spacer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+        <div id="spacer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div> -->
 
 
 
@@ -93,7 +187,7 @@
               <label for="phone" class="control-label">Telephone</label>
               <input  id="phone" name="phone" class="form-control" placeholder="please enter your phone number" autocomplete="on" ng-model="booking.phone" ng-required="true" type="text" pattern="[0]{1}[0-9]{10}" title="Please use your full number, beginning with zero">
 
-              <div ng-show="bookingForm.age.$touched && bookingForm.age.$invalid">
+              <div ng-show="bookingForm.phone.$touched && bookingForm.age.$invalid">
                   <p class="invalid">Enter a valid phone number</p>
               </div>
         </div>
@@ -106,8 +200,9 @@
           <div class="modal-thing" ng-click="myOtherFunc()">
             <div class="modal-message" ng-click="myOtherFunc()">
               <div id="click-away" class="glyphicon glyphicon-remove-circle"></div>
-              <img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="120">
-              <p><strong>Thank you for booking your balloon flight. We'll contact you soon with everything you'll need to know.</strong></p>
+              <img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="120" id="modal-logo">
+              <p><strong>Thank you for booking your balloon flight. We'll contact you soon with everything you'll need to know.
+              </strong></p>
             </div>
           </div>
         </form>
