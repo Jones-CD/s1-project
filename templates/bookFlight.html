@@ -16,181 +16,20 @@
   
       <form name="bookingForm" ng-controller="myCtrl">
 
-         <!-- <div>
-            <select ng-model="booking.datetime" class="form-control">
-              <option value="">Friday 14th</option>
-              <option>08.30</option>
-              <option>09.30</option>
-              <option>10.30</option>
-            </select>
-        </div> 
-
-         >>>>data test (remove later)
-      $pristine: {{bookingForm.date/time.$pristine}},
-      $dirty: {{bookingForm.date/time.$dirty}},
-      $untouched: {{bookingForm.date/time.$untouched}},
-      $touched: {{bookingForm.date/time.$touched}},
-      $invalid: {{bookingForm.date/time.$invalid}},
-      $valid: {{bookingForm.date/time.$valid}},
-      $not-empty: {{bookingForm.date/time.$not-empty}}<<<<
-      <br>
-      <br> -->
-      <!-- <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-          <select ng-model="selectedTime" ng-options="x for x in FriTimes" class="form-control" class="booktime">
-            <option value=""><p>Friday 14th</p></option>
-          </select>
-        </div> -->
-
-        <!-- <div ng-hide="selectedTime">
-                  <p class="invalid">Enter a valid name</p>
-              </div> -->
-
-       <!--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" class="sT2"> 
-          <select ng-model="selectedTime2" ng-options="x for x in SatTimes" class="form-control">
-            <option value=""><p>Saturday 15th</p></option>
-          </select>
-        </div>
-
-         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-          <select ng-model="selectedTime3" ng-options="x for x in SunTimes" class="form-control">
-            <option value=""><p>Sunday 16th</p></option>
-          </select>
-        </div>
+         
+      
+      
+      
         
-      </div>
-      
-      
-      <div ng-show="selectedTime" class="flight-select-alert">
-      <p>You have selected {{ selectedTime }} on Friday 14th August 2017</p></div>
-      <div ng-show="selectedTime2" class="flight-select-alert">
-      <p>You have selected {{ selectedTime2 }} on Saturday 15th August 2017</p></div>
-      <div ng-show="selectedTime3" class="flight-select-alert">
-      <p>You have selected {{ selectedTime3 }} on Sunday 16th August 2017</p></div>
-      <br> -->
-      <!-- >>>>data test (remove later)
-      $pristine: {{bookingForm.selectedTime.$pristine}},
-      $dirty: {{bookingForm.selectedTime.$dirty}},
-      $untouched: {{bookingForm.selectedTime.$untouched}},
-      $touched: {{bookingForm.selectedTime.$touched}},
-      $invalid: {{bookingForm.selectedTime.$invalid}},
-      $valid: {{bookingForm.selectedTime.$valid}},
-      $not-empty: {{bookingForm.selectedTime.$not-empty}}<<<< -->
-       <!--  <div>
-            <select ng-model="selectedDate2" ng-style="myObj">
-              <option value="">Saturday 15th</option>
-              <option>08.30</option>
-              <option>09.30</option>
-              <option>10.30</option>
-            </select>
-        </div> 
-        <div>
-            <select ng-model="selectedDate2" ng-style="myObj">
-              <option value="">Sunday 16th</option>
-              <option>08.30</option>
-              <option>09.30</option>
-              <option>10.30</option>
-            </select>
-        </div>  -->
-
-        <br>
-        <div ng-show="booking.datetime.$not-empty" >
-          <span id="dateOfFlight">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
-        </div>
-          <br>
-        <!-- <div>
-          <select ng-model="selectedTime" ng-style="myObj">
-            <option value="">Choose a time</option>
-            <option>08.30</option>
-            <option>09.30</option>
-            <option>10.30</option>
-          </select>
-           <span id="dateOfFlight">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
-        </div>  -->
-
-    
-
-      <!--   <div class="dropdown">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p>
-                Friday 14th</p>
-                    <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                    </div>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li class="book"><a href="#">Time 1</a></li>
-                <li class="book"><a href="#">Time 2</a></li>
-                <li class="book"><a href="#">Time 3</a></li>
-              </ul>
-            </div>
-        </div>
-        <div class="dropdown">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p>
-                Saturday 15th</p>
-                    <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                    </div>      
-                </button>
-               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li class="book"><a href="#">Time 1</a></li>
-                <li class="book"><a href="#">Time 2</a></li>
-                <li class="book"><a href="#">Time 3</a></li>
-                <li class="book"><a href="#">Time 4</a></li>
-                <li class="book"><a href="#">Time 5</a></li>
-
-              </ul>
-            </div>
-        </div>
-        <div class="dropdown">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p>
-                Sunday 16th</p>
-                <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                </div>
-              </button>
-               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li class="book"><a href="#">Time 1</a></li>
-                <li class="book"><a href="#">Time 2</a></li>
-                <li class="book"><a href="#">Time 3</a></li>
-              </ul>
-              </div>
-            </div>
-        <div id="spacer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div> -->
-
-
-      <!-- <div class="day" id=Fri class="dropdown">
-        <p>Friday</p>
-        <ul>
-          <li>time 1</li>
-          <li>time 2</li>
-          <li>time 3</li>
-        </ul>
-      </div>
-      <div class="day" id=Sat class="dropdown">
-        <p>Saturday</p>
-        <ul>
-          <li>time 1</li>
-          <li>time 2</li>
-          <li>time 3</li>
-        </ul>
-      </div>
-      <div class="day" id=Sun class="dropdown">
-        <p>Sunday</p>
-        <ul>
-          <li>time 1</li>
-          <li>time 2</li>
-          <li>time 3</li>
-        </ul>
-      </div> -->
-      <div class="row"> <!--row for all day/time and reset buttons -->
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="Fri">
+      <div class="row"> <!--row for all day/time buttons -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="Fri">
             <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 <p >Friday 14th</p>
                 <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </div>
               </button>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <ul class="dropdown-menu" ng-model="selectedTime1" aria-labelledby="dropdownMenu1">
                 <li class="FriTime"><a href="#">19.00</a></li>
                 <li class="FriTime"><a href="#">19.30</a></li>
                 <li class="FriTime"><a href="#">20.00</a></li>
@@ -200,13 +39,13 @@
             
         </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"  id="Sat">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  id="Sat">
               <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 <p>Saturday 15th</p>
                 <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </div>
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <ul class="dropdown-menu" ng-model="selectedTime2" aria-labelledby="dropdownMenu1">
                 <li class="SatTime"><a href="#">05.00</a></li>
                 <li class="SatTime"><a href="#">06.00</a></li>
                 <li class="SatTime"><a href="#">07.00</a></li>
@@ -217,20 +56,35 @@
               </ul>
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"  id="Sun">
-              <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  id="Sun">
+              <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-model="selectedTime3">
                 <p>Sunday 16th</p>
                 <div class="down-arrow-date"  ><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </div>
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <ul class="dropdown-menu"  aria-labelledby="dropdownMenu1">
                 <li class="SunTime"><a href="#">05.00</a></li>
                 <li class="SunTime"><a href="#">06.00</a></li>
                 <li class="SunTime"><a href="#">07.00</a></li>
               </ul>
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"> 
+          <div class="flight-select-alert" id="Fri-alert">
+            <p>You have selected {{ selectedTime1 }} on Friday 14th August 2017</p>
+          </div>
+          <div class="flight-select-alert" id="Sat-alert">
+            <p>You have selected {{ selectedTime2 }} on Saturday 15th August 2017</p>
+          </div>
+          <div class="flight-select-alert" id="Sun-alert">
+            <p>You have selected {{ selectedTime3 }} on Sunday 16th August 2017</p>
+          </div>
+      
+
+        <div ng-show="booking.datetime.$not-empty" >
+          <span id="dateOfFlight">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
+        </div>
+
+          <div class="col-xs-12" > 
             <button class="btn btn-default" id="reset" type="button">
             <p>Reset</p>
             </button>

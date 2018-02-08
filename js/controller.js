@@ -17,47 +17,55 @@ angular.module('RouteControllers', [])
 				console.log(" in myOtherFunc");
 			}
   			
-      $scope.FriTimes = ["06.30", "07.30", "08.30"]
+      // $scope.FriTimes = ["06.30", "07.30", "08.30"]
  
-      $scope.SatTimes = ["06.30", "07.30", "08.30", "19.30", "20.00", "20.30", "21.00"]
+      // $scope.SatTimes = ["06.30", "07.30", "08.30", "19.30", "20.00", "20.30", "21.00"]
       
-      $scope.SunTimes = ["06.30", "07.00", "07.30", "08.00", "08.30"]
-
-      
-
-      // // This is my attempt to hide the (one to start with) alternate select fields once one has been chosen
-      // $scope.pickFlightFunc = function () {
-      //   if ($scope.selectedTime.$valid) {
-      //       $(".sT1").addClass(".sT2-hide");
-
-      //   }
-      // }
+      // $scope.SunTimes = ["06.30", "07.00", "07.30", "08.00", "08.30"]
 
 
-      // If Friday is clicked, hide Saturday and Sunday
+      // If Friday is clicked, hide all days, show reset, show 'alert'
         $(".FriTime").click(function() {
+            $("#Fri").hide();
             $("#Sat").hide();
             $("#Sun").hide();
+            $("#reset").show();
+            $("#Fri-alert").show();
+            // $("#Fri-alert").addClass("look-at-me");
+            console.log("Fri clicked");
         });
 
-        // // If Saturday is clicked, hide and Saturday and Sunday
+        // If Saturday is clicked, hide and Saturday and Sunday
         $(".SatTime").click(function() {
             $("#Fri").hide();
             $("#Sun").hide();
+            $("#Sat").hide();
+            $("#reset").show();
+            $("#Sat-alert").show();
+            console.log("Sat clicked");
         });
 
         // If Sunday is clicked, hide Friday and Saturday
         $(".SunTime").click(function() {
             $("#Fri").hide();
             $("#Sat").hide();
+            $("#Sun").hide();
+            $("#reset").show();
+            $("#Sun-alert").show();
+            console.log("Sun clicked");
         });
 
-        // // If reset is clicked, all days are shown
+        // If reset is clicked, all days are shown
         $("#reset").click(function() {
             $("#Fri").show();
             $("#Sat").show();
             $("#Sun").show();
+            $("flight-select-alert").hide();
+            $("#reset").hide();
+            console.log("reset clicked");
         });
+
+      
 });
     	
    
