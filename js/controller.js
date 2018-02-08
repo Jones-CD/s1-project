@@ -60,7 +60,7 @@ angular.module('RouteControllers', [])
             $("#Fri").show();
             $("#Sat").show();
             $("#Sun").show();
-            $("flight-select-alert").hide();
+            $(".flight-select-alert").hide();
             $("#reset").hide();
             console.log("reset clicked");
         });
