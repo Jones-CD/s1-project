@@ -1,0 +1,17 @@
+{
+  "name": "s1-project",
+  "description": "Bristol Balloon Fiesta 2017",
+  "main": "index.js",
+  "authors": [
+    "Chris <releasethebadgers@yahoo.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/badgerboy99/s1-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
