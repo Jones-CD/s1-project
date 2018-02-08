@@ -25,14 +25,39 @@ angular.module('RouteControllers', [])
 
       
 
-      // This is my attempt to hide the (one to start with) alternate select fields once one has been chosen
-      $scope.pickFlightFunc = function () {
-        if ($scope.selectedTime.$valid) {
-            $(".sT1").addClass(".sT2-hide");
+      // // This is my attempt to hide the (one to start with) alternate select fields once one has been chosen
+      // $scope.pickFlightFunc = function () {
+      //   if ($scope.selectedTime.$valid) {
+      //       $(".sT1").addClass(".sT2-hide");
 
-        }
-      }
+      //   }
+      // }
 
-	});
+
+      // If Friday is clicked, hide Saturday and Sunday
+        $(".FriTime").click(function() {
+            $("#Sat").hide();
+            $("#Sun").hide();
+        });
+
+        // // If Saturday is clicked, hide and Saturday and Sunday
+        $(".SatTime").click(function() {
+            $("#Fri").hide();
+            $("#Sun").hide();
+        });
+
+        // If Sunday is clicked, hide Friday and Saturday
+        $(".SunTime").click(function() {
+            $("#Fri").hide();
+            $("#Sat").hide();
+        });
+
+        // // If reset is clicked, all days are shown
+        $("#reset").click(function() {
+            $("#Fri").show();
+            $("#Sat").show();
+            $("#Sun").show();
+        });
+});
     	
    

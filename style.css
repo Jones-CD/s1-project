@@ -180,9 +180,9 @@ li:hover {
     background-color: white;
 }
 
-li.setwith.dropdown.open a: {
+/*li.setwith.dropdown.open a: {
 	background-color: red;
-}
+}*/
 
 
 /*------------ --------- -------------------------------------------*/
@@ -454,6 +454,10 @@ li.book a {
 	opacity: 0.5;
 }
 
+.book-flight-btn a:focus, a:hover {
+	color: none;
+}
+
 .book-flight-btn-valid {
 	opacity: 1.0;
 }
@@ -514,13 +518,12 @@ input.ng-invalid.ng-touched {
 }
 
 #dropdownMenu1 {
-	height: 60px;
+	height: 50px;
 	width: 100%;
 	margin-bottom: 10px;
 	background-color: #66ffcc;
 	font-family: sans-serif;
 	/*width: 33%;*/
-	height: 60px;
 	color: #000099;
 	position: relative;
 	/*border: 2px solid white;*/
@@ -534,21 +537,21 @@ input.ng-invalid.ng-touched {
 
 #dropdownMenu1 p {
 	font-weight: 500;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	padding-top: 4px;
 	text-align: left;
 	padding-left: 8px;
 }
 
-li.book {
+.dropdown-menu li {
 	background-color: #abfdee;
 	padding: 10px;
 	border-top: 1px solid white;
 	font-family: sans-serif;
 	width: 100%;
-	height: 60px;
+	height: 48px;
 	text-align: center;
-	padding-top: 17px;
+	padding-top: 14px;
 	position: relative;
 	top: -14px;
 }
@@ -570,8 +573,9 @@ button.#dropdownMenu1:nth-child(3){
 	margin-bottom: 50px;
 }
 
+/* creates a resposive space beneath day/time selectors */
 #spacer {
-	height: 40px;
+	height: 30px;
 	/*background-color: red;*/
 }
 
@@ -584,10 +588,39 @@ select {
 	letter-spacing: 0.5px;
 }
 
+.flight-select-alert {
+	color: white;
+    text-align: center;
+    border-radius: 6px;
+    border-style: 1px solid black;
+    background-color: #7a7a7a;
+    height: auto;
+    padding: 10px 12px 10px 12px;
+    letter-spacing: 0.25px;
+    line-height: 0.8;
 
-/*  hides day/date selects once one is active   */
-.sT2-hide {
-	display: none;
+}
+
+#reset{
+  width: 80px;
+  height: 30px;
+  padding: 2px 15px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: gray;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+
+#form-outer {
+	/*border: 1px solid lightgray;*/
+  	border-radius: 4px;
+  	height: auto;
+  	background-color: #ebe8e0;
+  	padding-top: 20px;
 }
 
 /* ------------ ----- ------------------------------------------*/
@@ -894,7 +927,16 @@ li.dropdown {
 
 /*booking page------------------------------------------------*/
 
+#reset{
+  width: 80px;
+  height: 50px;
+  padding: 5px 15px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
 }
+
+
 
 } /* keep this one! */
 
