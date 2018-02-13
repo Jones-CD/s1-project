@@ -116,12 +116,14 @@ nav.navbar {
 }
 
 .navbar-default {
-	/*z-index: 95;*/
 	background-color: #66ffcc;
+	/*border-style: solid;
+	border-color: white;
+	border-width: 0px 0px 3px 0px;*/
 }
 
 #banner-logo {
-    padding: 30px 20px 0px 35px;
+    padding: 28px 20px 0px 35px;
    
 }
 
@@ -133,7 +135,7 @@ nav.navbar {
     color: black;
     text-align: center;
     padding: 0px;
-    border-bottom: 1px solid white;
+    /*border-bottom: 1px solid white;*/
     /*opacity: 0.8;*/
     margin-top: 0px;  
     width: 100%;  
@@ -166,10 +168,27 @@ nav.navbar {
 
 
 li {
-    border-top: 1px solid white;
     padding-top: 10px;
     background-color: #66ffcc;
     height: 60px;
+}
+
+.dropdown-menu li {
+	border-top: 1px solid white;
+	top: 3px;
+    position: relative;
+    width: 100%;
+    background-color: #b2ffe5;
+}
+
+li.FriTime, li.SatTime, li.SunTime {
+    position: relative;
+    top: -14px;
+    height: 48px;
+}
+
+li.FriTime:last-child, li.SatTime:last-child, li.SunTime:last-child {
+	border-radius: 0px 0px 4px 4px;: 
 }
 
 .dropdown-toggle a:active {
@@ -543,7 +562,7 @@ input.ng-invalid.ng-touched {
 	padding-left: 8px;
 }
 
-.dropdown-menu li {
+.dropdown-menu #daydrop li {
 	background-color: #abfdee;
 	padding: 10px;
 	border-top: 1px solid white;
@@ -595,11 +614,12 @@ select {
     /*border-style: 1px solid black;*/
     background-color: #7a7a7a;
     height: auto;
+    width: 95.8%;
     padding: 10px 12px 10px 12px;
     letter-spacing: 0.25px;
     line-height: 0.8;
+    margin: 15px 30px 15px 15px;
     display: none;
-
 }
 
 #reset{
@@ -654,7 +674,6 @@ select {
 	position: relative;
   	left: 50%;
   	transform: translate(-50%, -50%);
-
 }
 
 button a {
@@ -860,8 +879,9 @@ li.footer-logo {
 }
 
 #banner-logo {
-	position: relative;
+	/*position: relative;*/
     left: 20%;
+    top: 30px;
 }
 
 }
@@ -879,6 +899,12 @@ li.footer-logo {
     
 body {
 	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#banner-logo {
+	position: relative;
+    left: 15%;
+    top: -2px;
 }
 
 .central-box {
@@ -899,11 +925,6 @@ body {
 }
 
 
-#banner-logo {
-	position: relative;
-    width: 100px;
-    left: 150px;
-}
 
 #myCollapsingList {
 	width: 100%;
@@ -919,6 +940,7 @@ li.dropdown {
 
 .aside-text {
 	padding-top: 50px;
+	max-width: 300px;
 }
 
 /*booking page------------------------------------------------*/

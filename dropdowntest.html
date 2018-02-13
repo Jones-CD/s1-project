@@ -55,7 +55,7 @@
             <option>10.30</option>
         </select>
         <!-- <span id="dateOfFlight">Time selected is:  {{selectedTime}}</span> -->
-        <span id="dateOfFlight">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
+        <span id="dateOfFlight" ng-bind="selectedDate2">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
     </div> 
 
     </div> 
@@ -134,6 +134,30 @@
 
     </div> -->
 </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="Fri">
+            <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-model="selectedTime1">
+                <p >Friday 14th</p>
+                <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </div>
+              </button>
+
+              <ul class="dropdown-menu" id="daydrop"  aria-labelledby="dropdownMenu1">
+                <li class="FriTime" ><a href="#"><p>19.00</p></a></li>
+                <li class="FriTime"><a href="#"><p>19.30</p></a></li>
+                <li class="FriTime"><a href="#"><p>20.00</p></a></li>
+                <li class="FriTime"><a href="#"><p>20.30</p></a></li>
+
+              </ul>
+            
+          </div>
+
+          <div class="flight-select-alert" id="Sat-alert">
+            <p>You have selected {{ selectedTime1 }} on Saturday 15th August 2017</p>
+          </div>
+
+
+
 
 </body>
 
