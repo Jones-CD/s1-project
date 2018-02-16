@@ -349,6 +349,15 @@ video {
 	margin-bottom: 20px;
 }
 
+#video-play-glyph {
+	color: red;
+	position: relative;
+  	left: 50%;
+  	top: 45%;
+  	transform: translate(-50%, -50%);
+}
+
+
 #form-blurb p {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 500;
@@ -840,9 +849,9 @@ li.footer-logo {
 
 @media only screen and (min-width: 600px) { 
     
-.setwidth {
+./*setwidth {
 	width: 16.66%;
-}
+}*/
 
 .setwidth.dropdown {
 	width: 16.66%;

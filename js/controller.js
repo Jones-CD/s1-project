@@ -18,9 +18,9 @@ angular.module('RouteControllers', [])
 				console.log(" in myOtherFunc");
 			}
 
-      $scope.FriTimes =  [ {'id':'six', 'time': '18:00'},  
-                          {'id':'seven', 'time': '19:00'} ]
-                        
+      $scope.FriTimes =  [ {'time':'six', 'name': '18:00'},  
+                          {'time':'seven', 'name': '19:00'} ]
+
   			
       // $scope.FriTimes = ["06.30", "07.30", "08.30"]
  
@@ -29,8 +29,8 @@ angular.module('RouteControllers', [])
       // $scope.SunTimes = ["06.30", "07.00", "07.30", "08.00", "08.30"]
 
       // If Friday is clicked, hide all days, show reset, show 'alert'
-        $(".FriTime").click(function() {
-            // $("#Fri").hide();
+        $("#Fri").click(function() {
+            $("#Fri").hide();
             $("#Sat").hide();
             $("#Sun").hide();
             $("#reset").show();

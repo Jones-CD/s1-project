@@ -8,6 +8,7 @@
         poster= "img/video-poster.png"> 
         	<source src="video/video.mp4" type="video/mp4">
 		    </video>
+        <span class="glyphicon glyphicon-play-circle" id="video-play-glyph"></span>
 
     		  <h1>See us from a different perspective</h1>
     		  <p id="videointro">Try the once-in-a-lifetime experience of drifting silently above the beautiful city of Bristol and surrounding countryside in one of our hot-air balloons at dawn or dusk. Watch the short video above to give you a flavour of what you can expect. We're offering <strong>hour-long flights for only £80 per person, including a glass of champagne</strong>, and will return you to the Fiesta arena by car. Please select your favoured day and time below – and prepare to be gobsmacked!</p>
@@ -24,17 +25,15 @@
                     </div>
                   </button>
 
-                  <ul class="dropdown-menu" id="daydrop" aria-labelledby="dropdownMenu1">
-                    <!-- <li class="FriTime" ><a href="#"><p>19.00</p></a></li>
+                  <select class="dropdown-menu" id="daydrop" ng-model="selectedTime" aria-labelledby="dropdownMenu1">
+                    <option class="FriTime" ng-repeat="x in FriTimes" ng-value="x.id">{{ x.time }}</option>
+                  </select>
+                    <!-- <li class="FriTime"><a href="#"><p>19.00</p></a></li>
                     <li class="FriTime"><a href="#"><p>19.30</p></a></li>
                     <li class="FriTime"><a href="#"><p>20.00</p></a></li>
                     <li class="FriTime"><a href="#"><p>20.30</p></a></li> -->
-                    <li class="FriTime" ng-repeat="x in FriTimes" ng-value="x.id"><a href="#"><p>{{ x.time }}</p></a></li>
-
-
-                  </ul>
-                
-            </div>
+                    <!-- <li class="FriTime" ng-repeat="x in FriTimes" ng-value="x.id"><a href="#"><p>{{ x.time }}</p></a></li> -->
+              </div>
 
 
 
@@ -76,8 +75,8 @@
                   </ul>
               </div>
 
-              <div class="flight-select-alert" id="Fri-alert">
-                <p>You have selected {{ x.time }} on Friday 14th August 2018</p>
+              <div class="flight-select-alert" id="Fri-alert" ng-value="x.id">
+                <p>You have selected {{ selectedTime }} on Friday 14th August 2018</p>
               </div>
               <div class="flight-select-alert" id="Sat-alert">
                 <p>You have selected {{ selectedTime2 }} on Saturday 15th August 2018</p>
@@ -139,6 +138,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
               <button class="book-flight-btn" type="submit" class="btn btn-default" ng-click="myFunc()"><a>SUBMIT</a></button>
             </div>
+
         </form>
       </div>
     
