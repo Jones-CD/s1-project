@@ -2,94 +2,154 @@
 <div class="row" class="central-box">
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7 col-lg-offset-1" id="content">
        
-
         <video controls= "controls" 
         preload= "none"   
         poster= "img/video-poster.png"> 
         	<source src="video/video.mp4" type="video/mp4">
-		    </video>
-        <span class="glyphicon glyphicon-play-circle" id="video-play-glyph"></span>
+        </video>
+        
 
     		  <h1>See us from a different perspective</h1>
-    		  <p id="videointro">Try the once-in-a-lifetime experience of drifting silently above the beautiful city of Bristol and surrounding countryside in one of our hot-air balloons at dawn or dusk. Watch the short video above to give you a flavour of what you can expect. We're offering <strong>hour-long flights for only £80 per person, including a glass of champagne</strong>, and will return you to the Fiesta arena by car. Please select your favoured day and time below – and prepare to be gobsmacked!</p>
+    		  <p id="videointro">Try the once-in-a-lifetime experience of drifting silently above the beautiful city of Bristol and surrounding countryside in one of our hot-air balloons at dawn or dusk. Watch the short video above to give you a flavour of what you can expect. We're offering <strong>hour-long flights for only £80 per person, including a glass of champagne</strong>, and will return you to the Fiesta arena by car. Please select your favoured day and time below – and prepare to be impressed!</p>
         
   
   
       <form name="bookingForm" ng-controller="myCtrl" novalidate>
 
         <div class="row"> <!--row for all day/time buttons -->
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="Fri">
+
+<!-- niel's code below ************************************************** -->
+
+   <!--      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="Fri"> 
+
+          <select  ><p>Friday 14th</p> 
+
+            <option  class="FriTime" ng-repeat="x in FriTimes" ng-value="x.time" ng-model="selectedTime"> {{x.time}} </option> 
+
+          </select> 
+
+        </div> 
+ -->
+
+
+<!-- niel's code above ************************************************** -->
+
+<!-- my new attempt ************************************************** -->
+          
+
+   <!--  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <select class="day-choice" ng-model="selectedDate" ng-click="mySelectFunc">
+            <option value="">Choose a date</option>
+            <option class="day">Fri 14th</option>
+            <option class="day">Sat 15th</option>
+            <option class="day">Sun 16th</option>
+        </select> -->
+        <!-- <span id="dateOfFlight">Date selected is: {{selectedDate2}}</span> -->
+    <!-- </div>  -->
+    
+   <!--  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <select class="time-choice" ng-model="selectedTime">
+            <option value=""><p>Choose a time</p></option>
+            <option class="time">08.30</option>
+            <option class="time">09.30</option>
+            <option class="time">10.30</option>
+        </select> -->
+        <!-- <span id="dateOfFlight">Time selected is:  {{selectedTime}}</span> -->
+        <!-- <span id="dateOfFlight" >Your chosen balloon flight is on {{selectedDate}} August at {{selectedTime}}</span> -->
+    <!-- </div>  -->
+
+
+
+<!-- another attempt ************************************************** -->
+
+
+        <select>
+            <optgroup label="Friday" >
+              <option ng-model="selectedTime"> 06.00 </option>
+              <option> 07.00 </option>
+              <option> 08.00 </option>
+            </optgroup>
+           <optgroup label="Saturday">
+              <option> 06.00 </option>    
+              <option> 07.00 </option>
+              <option> 08.00 </option>
+            </optgroup>
+            <optgroup label="Sunday">
+              <option> 06.00 </option>    
+              <option> 07.00 </option>
+              <option> 08.00 </option>
+            </optgroup>
+        </select>
+
+
+           <!--  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="Fri">
                 <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <p>Friday 14th</p>
                     <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                     </div>
-                  </button>
+                  </button> -->
 
-                  <select class="dropdown-menu" id="daydrop" ng-model="selectedTime" aria-labelledby="dropdownMenu1">
+                  <!-- <select class="btn-new" id="daydrop" ng-model="selectedTime" aria-labelledby="dropdownMenu1" >
                     <option class="FriTime" ng-repeat="x in FriTimes" ng-value="x.id">{{ x.time }}</option>
-                  </select>
+                  </select> -->
                     <!-- <li class="FriTime"><a href="#"><p>19.00</p></a></li>
                     <li class="FriTime"><a href="#"><p>19.30</p></a></li>
                     <li class="FriTime"><a href="#"><p>20.00</p></a></li>
                     <li class="FriTime"><a href="#"><p>20.30</p></a></li> -->
                     <!-- <li class="FriTime" ng-repeat="x in FriTimes" ng-value="x.id"><a href="#"><p>{{ x.time }}</p></a></li> -->
-              </div>
+              <!-- </div> -->
 
 
-
-
-
-
-
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  id="Sat">
+            <!--  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  id="Sat">
                   <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <p>Saturday 15th</p>
                     <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                     </div>
                   </button>
                   <ul class="dropdown-menu" ng-model="selectedTime2" aria-labelledby="dropdownMenu1">
-                   <!--  <li class="SatTime"><a href="#"><p>05.00</p></a></li>
+                   <!  <li class="SatTime"><a href="#"><p>05.00</p></a></li>
                     <li class="SatTime"><a href="#"><p>06.00</p></a></li>
                     <li class="SatTime"><a href="#"><p>07.00</p></a></li>
                     <li class="SatTime"><a href="#"><p>19.00</p></a></li>
                     <li class="SatTime"><a href="#"><p>20.00</p></a></li>
                     <li class="SatTime"><a href="#"><p>21.00</p></a></li> -->
-                    <li ng-repeat="SatTime in SatTimes">{{ SatTime }}</li>
+                    <!-- <li ng-repeat="SatTime in SatTimes">{{ SatTime }}</li> -->
 
-                  </ul>
-              </div>
+                  <!-- </ul> -->
+              <!-- </div> -->
 
-              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  id="Sun">
+             <!--  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  id="Sun">
                   <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-model="selectedTime3">
                     <p>Sunday 16th</p>
                     <div class="down-arrow-date"  ><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                     </div>
                   </button>
                   <ul class="dropdown-menu"  aria-labelledby="dropdownMenu1">
-                   <!--  <li class="SunTime"><a href="#"><p>05.00</p></a></li>
+                    <li class="SunTime"><a href="#"><p>05.00</p></a></li>
                     <li class="SunTime"><a href="#"><p>06.00</p></a></li>
-                    <li class="SunTime"><a href="#"><p>07.00</p></a></li> -->
+                    <li class="SunTime"><a href="#"><p>07.00</p></a></li>
                     <li ng-repeat="SunTime in SunTimes">{{ SunTime }}</li>
 
 
                   </ul>
-              </div>
+              </div> -->
 
-              <div class="flight-select-alert" id="Fri-alert" ng-value="x.id">
-                <p>You have selected {{ selectedTime }} on Friday 14th August 2018</p>
+              <!-- the div below is intended to show once a time is selected – see controller.js -->
+              <div class="flight-select-alert" id="Fri-alert">
+                <p id="dateOfFlight">Your chosen balloon flight is on {{ selectedDate }} August at {{ selectedTime }}</p>
               </div>
-              <div class="flight-select-alert" id="Sat-alert">
+              <!-- <div class="flight-select-alert" id="Sat-alert">
                 <p>You have selected {{ selectedTime2 }} on Saturday 15th August 2018</p>
               </div>
               <div class="flight-select-alert" id="Sun-alert">
                 <p>You have selected {{ selectedTime3 }} on Sunday 16th August 2018</p>
-              </div>
+              </div> -->
           
 
-            <!-- <div ng-show="booking.datetime.$not-empty" >
-              <span id="dateOfFlight">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
+            <div>
+              <span id="dateOfFlight">Your chosen balloon flight is on ...{{selectedDate}} August at ...{{selectedTime}}</span>
             </div>
- -->
+
               <div class="col-xs-12" > 
                 <button class="btn btn-default" id="reset" type="button">
                 <p>Reset</p>

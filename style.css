@@ -353,8 +353,9 @@ video {
 	color: red;
 	position: relative;
   	left: 50%;
-  	top: 45%;
+  	top: 25%;
   	transform: translate(-50%, -50%);
+  	z-index: 100;
 }
 
 
@@ -645,8 +646,35 @@ select {
   display: none;
 }
 
+/*from Niel @CI*/
+.btn-new { 
+    background-color: green;
+    font-family: sans-serif; 
+    width: 33%;
+    height: 60px; 
+    color: white; 
+    position: relative; 
+    border: 2px solid white; 
+    border-width: 0px 0px 2px 0px; 
 
+} 
 
+option {
+	height: 100px;
+
+}
+
+select {
+	height: 48px;
+	width: 100%;
+	/*border-style: none;*/
+	background-color: none
+}
+
+select-selected {
+	background-color: #66ffcc;
+
+}
 
 /* ------------ ----- ------------------------------------------*/
 /* ------------ aside ------------------------------------------*/

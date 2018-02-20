@@ -18,8 +18,11 @@ angular.module('RouteControllers', [])
 				console.log(" in myOtherFunc");
 			}
 
-      $scope.FriTimes =  [ {'time':'six', 'name': '18:00'},  
-                          {'time':'seven', 'name': '19:00'} ]
+      // $scope.FriTimes =  [ {'id':'six', 'time': '18:00'}, 
+      //                      {'id':'seven', 'time': '19:00'},
+      //                      {'id':'eight', 'time': '20:00'}, 
+      //                      {'id':'nine', 'time': '21:00'} 
+      //                     ]
 
   			
       // $scope.FriTimes = ["06.30", "07.30", "08.30"]
@@ -28,15 +31,32 @@ angular.module('RouteControllers', [])
       
       // $scope.SunTimes = ["06.30", "07.00", "07.30", "08.00", "08.30"]
 
-      // If Friday is clicked, hide all days, show reset, show 'alert'
-        $("#Fri").click(function() {
-            $("#Fri").hide();
-            $("#Sat").hide();
-            $("#Sun").hide();
+      // If Choose a date is clicked, hide it, show reset.
+        $(".day").click(function() {
+            $(".day-choice").hide();
+            // $("#Sat").hide();
+            // $("#Sun").hide();
+            // $("#reset").show();
+            // $("#Fri-alert").show();
+            console.log("Fri clicked");
+        });
+
+        $(".time").click(function() {
+            // $(".day-choice").hide();
+            // $("#Sat").hide();
+            // $("#Sun").hide();
             $("#reset").show();
             $("#Fri-alert").show();
             console.log("Fri clicked");
         });
+
+
+
+
+        $scope.mySelectFunc = function () {
+        $(".day-choice").addClass("select-selected");
+        console.log(" in myOtherFunc");
+      }
 
       //   // If Saturday is clicked, hide all days, show reset, show 'alert'
       //   $(".SatTime").click(function() {
