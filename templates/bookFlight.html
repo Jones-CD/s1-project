@@ -14,40 +14,28 @@
         
   
   
-      <form name="bookingForm" ng-controller="myCtrl" novalidate>
+      <form name="bookingForm" ng-controller="myCtrl" novalidate >
 
         <div class="row"> <!--row for all day/time buttons -->
 
+          <div id="select-day">
+            <select  ng-model="selectedDate">
+                <option id="day-select-final" value="">Choose a date</option>
+                <option  id="day-choice" ng-repeat="x in Days" ng-value="x.Day" ng-model="selectedDate"> {{x.date}} </option>
+            </select>
+          </div> 
+          <div >
+            <select id="select-time" ng-model="selectedTime">
+                <option value="">Choose a time</option>
+                <option id="time-choice" ng-value="x.time" ng-repeat="x in FriTimes" ng-model="selectedTime"> {{x.time}} </option>
+              </select>
+          </div> 
 
+          <!-- <div class="flight-select-alert" id="Fri-alert" ng-value="x.id"> -->
+             <!--     <p>You have selected {{ selectedTime }} on {{selectedDate}} August 2018</p>
+          </div> -->
 
-
-        <div>
-        <select ng-model="selectedDate" ng-style="myObj">
-            <option value="">Choose a date</option>
-            <option  ng-repeat="x in Days" ng-value="x.Day" ng-model="selectedDate"> {{x.date}} </option>
-        </select>
-        <!-- <span id="dateOfFlight">Date selected is: {{selectedDate2}}</span> -->
-    </div> 
-    <br>
-    <br>
-    <div>
-        <select ng-model="selectedTime">
-            <option value="">Choose a time</option>
-            <option ng-repeat="x in FriTimes" ng-value="x.time" ng-model="selectedTime"> {{x.time}} </option>
-        </select>
-        
-        <span id="dateOfFlight" >Your chosen balloon flight is on {{selectedDate}} August at {{selectedTime}}</span>
-    </div> 
-
-
-     <div class="col-xs-12" > 
-                <button class="btn btn-default" id="reset" type="button">
-                <p>Reset</p>
-                </button>
-              </div>
-              <div id="spacer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              </div>
-            </div>
+        </div>
 
 
 
@@ -92,7 +80,7 @@
         </form>
       </div>
     
-        
+<!-- modal pop up upon form submission ***********************************************************-->
       <div class="modal-thing" ng-click="myOtherFunc()">
         <div class="modal-message" ng-click="myOtherFunc()">
           <div id="click-away" class="glyphicon glyphicon-remove-circle"></div>

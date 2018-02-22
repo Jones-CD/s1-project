@@ -84,10 +84,13 @@ span {
 #content {
 	padding:20px 50px 50px 50px;
 	background-color: white;
-	margin-right:-15px;
+	/*margin-right:-15px;*/
 }
 
-
+.nogutter > div[class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
 
 
 
@@ -96,20 +99,24 @@ span {
 /* ----------------------- NEW NAV ----- NEW NAV -------------------*/
 /* ----------------------- ------- ----- ------- -------------------*/
 
-.navbar {
+/*.navbar {
 	border: none;
-	}
+	}*/
+
+.navbar-toggle.collapsed {
+     border: none; 
+}
 
 .navbar-default .navbar-nav>li>a {
 	color: black;
 	padding-top: 12px;
 }
 
-nav.navbar {
+/*nav.navbar {
 	margin-bottom: 0px;
-}
+}*/
 
-.nav.navbar-header {
+.header-panel {
     background-color: #000099;
     height: 170px;
     width: 100%;
@@ -117,12 +124,14 @@ nav.navbar {
 
 .navbar-default {
 	background-color: #66ffcc;
-	/*border-style: solid;
+	border-style: solid;
 	border-color: white;
-	border-width: 0px 0px 3px 0px;*/
+	border-width: 0px 0px 3px 0px;
+	margin-bottom: 0px;
+	width: 100%;
 }
 
-#banner-logo {
+/*#banner-logo {
     padding: 28px 20px 0px 35px;
    
 }
@@ -134,46 +143,54 @@ nav.navbar {
     letter-spacing: 0.6px;
     color: black;
     text-align: center;
-    padding: 0px;
+    padding: 0px;*/
     /*border-bottom: 1px solid white;*/
     /*opacity: 0.8;*/
-    margin-top: 0px;  
+    /*margin-top: 0px;  
     width: 100%;  
-}
+}*/
 
-#myCollapsingList a:hover {
+/*#myCollapsingList a:hover {
 	background-color: white;
-}
+}*/
 
-.dropdown-menu {
+/*.dropdown-menu {
     text-align: center; 
     background-color: white;
     font-size: inherit;   
-}
+}*/
 
-.navbar-toggle {          
+/*.navbar-toggle {          
 	margin-top: -45px;
 	margin-right: 30px;
 	border: none;
 	width: 50px;
-}
+}*/
 
-.navbar-default .navbar-toggle .icon-bar {   
+/*.navbar-default .navbar-toggle .icon-bar {   
 	background-color: white;
 	width: 30px;
 	height: 3px;
 	margin-top: 6px;
 	border-radius: 1.5px;
-}
+}*/
 
 
 li {
-    padding-top: 10px;
+    padding-top: 8px;
     background-color: #66ffcc;
     height: 60px;
 }
 
-.dropdown-menu li {
+li:hover {
+	background-color: white;
+}
+
+li p {
+	font-weight: 500;
+}
+
+/*.dropdown-menu li {
 	border-top: 1px solid white;
 	top: 3px;
     position: relative;
@@ -197,7 +214,7 @@ li.FriTime:last-child, li.SatTime:last-child, li.SunTime:last-child {
 
 li:hover {
     background-color: white;
-}
+}*/
 
 /*li.setwith.dropdown.open a: {
 	background-color: red;
@@ -621,7 +638,6 @@ select {
 	color: white;
     text-align: center;
     border-radius: 6px;
-    /*border-style: 1px solid black;*/
     background-color: #7a7a7a;
     height: auto;
     width: 95.8%;
@@ -629,7 +645,7 @@ select {
     letter-spacing: 0.25px;
     line-height: 0.8;
     margin: 15px 30px 15px 15px;
-    display: none;
+    /*display: none;*/
 }
 
 #reset{
@@ -643,7 +659,7 @@ select {
   border: 1px solid lightgray;
   border-radius: 4px;
   text-transform: uppercase;
-  display: none;
+  /*display: none;*/
 }
 
 /*from Niel @CI*/
@@ -671,7 +687,7 @@ select {
 	background-color: none
 }
 
-select-selected {
+.select-selected {
 	background-color: #66ffcc;
 
 }
@@ -707,10 +723,9 @@ select-selected {
 	border: none;
 	margin-top: 35px;
 	padding: 10px;
-
 	position: relative;
   	left: 50%;
-  	transform: translate(-50%, -50%);
+  	transform: translate(-50%, -40%);
 }
 
 button a {
@@ -743,6 +758,7 @@ button a {
   	margin-left: auto;
     border: 15px solid white;
     background-color: white;
+    display: none;
 }
 
 #first {
@@ -938,19 +954,20 @@ body {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-#banner-logo {
+/*  this has caused problems with overall width  */
+/*#banner-logo {
 	position: relative;
     left: 15%;
     top: -2px;
-}
+}*/
 
-.central-box {
+/*.central-box {
 	width:80%;
 	margin-left: auto;
 	margin-right: auto; 
 	background-color: white; 
 	padding-top: 40px;
-}
+}*/
 
 .panel-body {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
