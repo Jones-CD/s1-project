@@ -1,9 +1,79 @@
 
-<div class="row" class="central-box" class="nogutter">
-        <div class="col-xs-12 col-sm-4 col-md-8 col-lg-7 col-lg-offset-1" id="content" style="background-color: green; height: 600px;">
+<div class="row" class="central-box" ng-controller="myCtrl" style="padding-left: 40px; padding-right: 40px; ">
+        <!-- <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-lg-offset-1"  style="background-color: green; height: 600px;">
+        </div> -->
+
+
+
+        <form name="bookingForm" ng-submit="submitForm()" novalidate >
+
+
+        	<input name="myInput" ng-model="myInput" required>
+        	<p>The input's valid state is:</p>
+			<h1>{{bookingForm.myInput.$valid}}</h1>
+
+          <div id="select-day">
+            <select  ng-model="selectedDate">
+                <option id="day-select-final" value="">Choose a date</option>
+                <option  id="day-choice" ng-repeat="x in Days" ng-value="x.Day" ng-model="booking.selectedDate"> {{x.date}} </option>
+            </select>
+          </div> 
+          <div >
+            <select id="select-time" ng-model="selectedTime" name="time">
+                <option value="">Choose a time</option>
+                <option id="time-choice" ng-value="x.time" ng-repeat="x in FriTimes" ng-model="booking.selectedTime"> {{x.time}} </option>
+              </select>
+              <h1>{{bookingForm.time.$valid}}</h1>
+  
+
+          <!-- <div class="flight-select-alert" id="Fri-alert" ng-value="x.id"> -->
+             <!--     <p>You have selected {{ selectedTime }} on {{selectedDate}} August 2018</p>
+          </div> -->
+
         </div>
 
-    <aside id="aside-box" class="col-xs-12 col-md-4 col-lg-3"  ng-include="'templates/aside1.html'"></aside>
+
+
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <label for="name" class="control-label" >Name</label>
+                  <input  id="name" name="name" class="form-control" placeholder="please enter your full name" autocomplete="on" ng-model="booking.name" ng-required="true" type="text">
+
+                  <h1>{{bookingForm.name.$valid}}</h1>
+
+                  <div ng-show="bookingForm.name.$touched && bookingForm.name.$invalid">
+                      <p class="invalid">Enter a valid name</p>
+                  </div>
+            </div>
+
+           <!--  >>>>data test (remove later)
+$pristine - {{bookingForm.name.$pristine}},
+$dirty: {{bookingForm.name.$dirty}},
+$untouched: {{bookingForm.name.$untouched}},
+$touched: {{bookingForm.name.$touched}},
+$invalid: {{bookingForm.name.$invalid}},
+$valid: {{bookingForm.name.$valid}}<<<< -->
+            
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
+              <button class="book-flight-btn" type="submit" class="btn btn-default" ng-click="myFunc()"><a>SUBMIT</a></button>
+            </div>
+
+        </form>
+      </div>
+    
+<!-- modal pop up upon form submission ***********************************************************-->
+      <div class="modal-thing" ng-click="myOtherFunc()">
+        <div class="modal-message" ng-click="myOtherFunc()">
+          <div id="click-away" class="glyphicon glyphicon-remove-circle"></div>
+          <img src="img/BBF18_logo_lg.png" alt="Bristol Balloon Fiesta 2018 logo" width="120" id="modal-logo">
+          <p><strong>Thank you for booking your balloon flight. We'll contact you soon with everything you'll need to know.
+          </strong></p>
+        </div>
+      </div>
+
+
+   <!--  <aside id="aside-box" class="col-xs-12 col-md-4 col-lg-3"  ng-include="'templates/aside1.html'"></aside> -->
 
 </div> <!--end row-->
 

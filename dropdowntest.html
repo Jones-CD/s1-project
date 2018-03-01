@@ -43,7 +43,7 @@
             <option>Sat 15th</option>
             <option>Sun 16th</option>
         </select>
-        <span id="dateOfFlight">Date selected is: {{selectedDate2}}</span>
+        <!-- <span id="dateOfFlight">Date selected is: {{selectedDate2}}</span> -->
     </div> 
     <br>
     <br>
@@ -55,15 +55,15 @@
             <option>10.30</option>
         </select>
         <!-- <span id="dateOfFlight">Time selected is:  {{selectedTime}}</span> -->
-        <span id="dateOfFlight" ng-bind="selectedDate2">Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
+        <span id="dateOfFlight" >Your chosen balloon flight is on {{selectedDate2}} August at {{selectedTime}}</span>
     </div> 
 
     </div> 
     <br>
     <br>
-    <div class="container">
+    <!-- <div class="container">
         <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
-            <div class="dropdown">
+           <!--  <div class="dropdown">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Friday 14th
@@ -76,8 +76,8 @@
                     <li><a href="#">Time 3</a></li>
                   </ul>
                   <span id="dateOfFlight">Time selected is: {{selectedTime}}</span>
-                </div>
-            </div>
+                </div> -->
+            </div> 
             
         <!--     <div class="dropdown">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -135,7 +135,7 @@
     </div> -->
 </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="Fri">
+          <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="Fri">
             <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-model="selectedTime1">
                 <p >Friday 14th</p>
                 <div class="down-arrow-date"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
@@ -150,14 +150,25 @@
 
               </ul>
             
-          </div>
+          </div> -->
 
-          <div class="flight-select-alert" id="Sat-alert">
+          <!-- <div class="flight-select-alert" id="Sat-alert">
             <p>You have selected {{ selectedTime1 }} on Saturday 15th August 2017</p>
-          </div>
+          </div> -->
 
 
-
+<!-- <select>
+    <optgroup label="Friday"></optgroup>
+    <option> 06.00 </option>
+    <optgroup label="Saturday"></optgroup>
+    <option> 06.00 </option>    
+    <option> 07.00 </option>
+    <option> A </option>
+    <optgroup label="Sunday"></optgroup>
+    <option> 06.00 </option>    
+    <option> 07.00 </option>
+    <option> A </option>
+</select> -->
 
 </body>
 

@@ -34,7 +34,8 @@ angular.module('myBBFApp').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/directions.html', 
     })
     .when('/master', {
-        templateUrl: 'templates/newMaster.html', 
+        templateUrl: 'templates/newMaster.html',
+        controller: 'myCtrl' 
     })
    
     // .when('/test', {

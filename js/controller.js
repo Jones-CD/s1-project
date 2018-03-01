@@ -36,10 +36,9 @@ angular.module('RouteControllers', [])
                           ]
 
 
-        $scope.submit = function() {
+        $scope.submitForm = function() {
             if ($scope.bookingForm.$valid) {
-              $scope.console.log.push(this.text);
-              $scope.text = '';
+             console.log("hooray!");
             }
           };
 

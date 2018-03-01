@@ -2,15 +2,15 @@
 <div class="row" class="central-box">
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7 col-lg-offset-1" id="content">
        
-        <!-- <video controls= "controls" 
+        <video controls= "controls" 
         preload= "none"   
         poster= "img/video-poster.png"> 
         	<source src="video/video.mp4" type="video/mp4">
-        </video> -->
+        </video>
         
 
-    		  <!-- <h1>See us from a different perspective</h1>
-    		  <p id="videointro">Try the once-in-a-lifetime experience of drifting silently above the beautiful city of Bristol and surrounding countryside in one of our hot-air balloons at dawn or dusk. Watch the short video above to give you a flavour of what you can expect. We're offering <strong>hour-long flights for only £80 per person, including a glass of champagne</strong>, and will return you to the Fiesta arena by car. Please select your favoured day and time below – and prepare to be impressed!</p> -->
+    		  <h1>See us from a different perspective</h1>
+    		  <p id="videointro">Try the once-in-a-lifetime experience of drifting silently above the beautiful city of Bristol and surrounding countryside in one of our hot-air balloons at dawn or dusk. Watch the short video above to give you a flavour of what you can expect. We're offering <strong>hour-long flights for only £80 per person, including a glass of champagne</strong>, and will return you to the Fiesta arena by car. Please select your favoured day and time below – and prepare to be impressed!</p>
         
   
   
@@ -18,20 +18,20 @@
 
         <div class="row"> <!--row for all day/time buttons -->
 
-          <div id="select-day">
+          <div id="select-day" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <select  ng-model="selectedDate">
                 <option id="day-select-final" value="">Choose a date</option>
-                <option  id="day-choice" ng-repeat="x in Days" ng-value="x.Day" ng-model="selectedDate"> {{x.date}} </option>
+                <option  id="day-choice" ng-repeat="x in Days" ng-value="x.Day" ng-model="booking.selectedDate"> {{x.date}} </option>
             </select>
           </div> 
-          <div >
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <select id="select-time" ng-model="selectedTime">
                 <option value="">Choose a time</option>
-                <option id="time-choice" ng-value="x.time" ng-repeat="x in FriTimes" ng-model="selectedTime"> {{x.time}} </option>
+                <option id="time-choice" ng-value="x.time" ng-repeat="x in FriTimes" ng-model="booking.selectedTime"> {{x.time}} </option>
               </select>
           </div> 
 
-          <!-- <div class="flight-select-alert" id="Fri-alert" ng-value="x.id"> -->
+         <!-- <div class="flight-select-alert" id="Fri-alert" ng-value="x.id"> -->
              <!--     <p>You have selected {{ selectedTime }} on {{selectedDate}} August 2018</p>
           </div> -->
 
@@ -84,7 +84,7 @@
       <div class="modal-thing" ng-click="myOtherFunc()">
         <div class="modal-message" ng-click="myOtherFunc()">
           <div id="click-away" class="glyphicon glyphicon-remove-circle"></div>
-          <img src="img/BBF17_logo_lg.jpg" alt="Bristol Balloon Fiesta 2017 logo" width="120" id="modal-logo">
+          <img src="img/BBF18_logo_lg.png" alt="Bristol Balloon Fiesta 2018 logo" width="120" id="modal-logo">
           <p><strong>Thank you for booking your balloon flight. We'll contact you soon with everything you'll need to know.
           </strong></p>
         </div>
