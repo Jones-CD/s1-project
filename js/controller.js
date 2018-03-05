@@ -4,6 +4,9 @@ angular.module('RouteControllers', [])
   
 		console.log('in controller'); // logs that connection to controller is active
   			
+        
+      // $scope.bookingForm.date.$valid = False;
+
         $scope.myFunc = function () {
   				if ($scope.bookingForm.$valid){
 
@@ -12,7 +15,8 @@ angular.module('RouteControllers', [])
   					console.log("in myFunc");
   					
     			}
- 			}	
+ 			  }	
+
  			$scope.myOtherFunc = function () {
 				$(".modal-thing").removeClass("look-at-me");
 				console.log("in myOtherFunc");
@@ -41,6 +45,7 @@ angular.module('RouteControllers', [])
              console.log("hooray!");
             }
           };
+
 
 
 

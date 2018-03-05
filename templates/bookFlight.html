@@ -53,7 +53,7 @@
                   <input  id="age" name="age" class="form-control" placeholder="please enter your age" autocomplete="on" ng-model="booking.age" ng-required="true" type="number" min="10" max="120">
 
                   <div ng-show="bookingForm.age.$touched && bookingForm.age.$invalid">
-                      <p class="invalid">Enter a valid age</p>
+                      <p class="invalid">Enter a valid age. You must be at least 10</p>
                   </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
