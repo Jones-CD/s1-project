@@ -13,14 +13,14 @@
 			<h1>{{bookingForm.myInput.$valid}}</h1>
 
           <div id="select-day">
-            <select  ng-model="selectedDate" name="date">
+            <select  ng-model="selectedDate" name="date" required>
                 <option id="day-select-final" value="">Choose a date</option>
                 <option  id="day-choice" ng-repeat="x in Days" ng-value="x.Day" ng-model="booking.selectedDate"> {{x.date}} </option>
             </select>
             <h1>date {{bookingForm.date.$valid}}</h1>
           </div> 
           <div >
-            <select id="select-time" ng-model="selectedTime" name="time">
+            <select id="select-time" ng-model="selectedTime" name="time" required>
                 <option value="">Choose a time</option>
                 <option id="time-choice" ng-value="x.time" ng-repeat="x in FriTimes" ng-model="booking.selectedTime"> {{x.time}} </option>
               </select>

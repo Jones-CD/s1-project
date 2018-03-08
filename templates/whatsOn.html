@@ -1,21 +1,20 @@
 
-<div class="central-box">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7 col-lg-offset-1" id="content" >
+<div class="fake-container" >
 
-        <div class="row">
-                <div class="col-xs-12">
-                    <h1>Plan your weekend of fun activities!</h1>
+   <div id="content" >
+         <div>
+            <div>
+                <h1>Plan your weekend of fun activities!</h1>
 
-                    <section>
-                    <p>Use our handy guide to organise your activities for the whole weekend. There's something for everyone, so don't miss out. Throughout the Bristol Balloon Fiesta you can follow our updates on Twitter – and keep your eyes peeled for a few surprises too!  </p>
-                    <br><br>
-           
-                    </section>
+                <section>
+                <p>Use our handy guide to organise your activities for the whole weekend. There's something for everyone, so don't miss out. Throughout the Bristol Balloon Fiesta you can follow our updates on Twitter – and keep your eyes peeled for a few surprises too!  </p>
+                <br><br>
+                </section>
 
-                </div>
-             </div>
+            </div>
+        </div>
 
-	       <div class="panel panel-default" id="topCollapse">
+	   <div class="panel panel-default" id="topCollapse">
     		  <div class="panel-heading">
          		<a data-toggle="collapse" href="#collapseOne">
                 <h4 class="panel-title">
@@ -23,8 +22,7 @@
          		</h4>
                     <div class="down-arrow"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                     </div></a>
-
-     		</div>
+                </div>
 
              <div id="collapseOne" class="panel-collapse collapse">
      		     <div class="panel-body">
@@ -158,12 +156,13 @@
      		</div> <!--end panel body-->
      	  </div> <!--end collapse three-->
         </div>  <!--end panel-->
-    </div>
+    
+
+    </div> <!--end #content-->
+
+    <aside id="aside-box" ng-include="'templates/aside1.html'"></aside>
 
 
-
-    <aside id="aside-box" class="col-xs-12 col-sm-4 col-md-4 col-lg-3"  ng-include="'templates/aside1.html'"></aside>
-
-</div> <!--end row-->
+</div> <!--end row  .central-box -->
 
 
