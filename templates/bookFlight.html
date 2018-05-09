@@ -1,6 +1,6 @@
 
 <div class="fake-container">
-    <div id="content">
+    <section id="content">
        <h1>See us from a different perspective</h1>
         <video controls= "controls" 
         preload= "none"   
@@ -14,7 +14,6 @@
       <form name="bookingForm" ng-controller="myCtrl" novalidate >
 
         <div class="row"> <!--row for all day/time buttons -->
-
           <div id="select-day" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <select  ng-model="selectedDate" ng-change="isFormValid()" required>
                 <option id="day-select-final" value="">Choose a date</option>
@@ -69,11 +68,11 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
-              <button class="book-flight-btn" type="submit" class="btn btn-default" ng-click="myFunc()"><a>SUBMIT</a></button>
+              <button class="book-flight-btn btn btn-default" type="submit"  ng-click="myFunc()"><a>SUBMIT</a></button>
             </div>
 
         </form>
-      </div> <!--end #content-->
+      </section> <!--end #content-->
     
 <!-- modal pop up upon form submission ***********************************************************-->
       <div class="modal-thing" ng-click="myOtherFunc()">

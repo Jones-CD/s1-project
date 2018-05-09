@@ -390,14 +390,14 @@ video {
 	margin-bottom: 30px;
 }
 
-#video-play-glyph {
+/*#video-play-glyph {
 	color: red;
 	position: relative;
   	left: 50%;
   	top: 25%;
   	transform: translate(-50%, -50%);
   	z-index: 100;
-}
+}*/
 
 
 #form-blurb p {
