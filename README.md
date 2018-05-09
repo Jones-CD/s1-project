@@ -2,7 +2,7 @@
 
 ## Overview
 
-This site is my Front End Project for the **Code Institute**'s Full Stack Web Development course, which I amm commpleting using online resources.
+This site is my Front End Project for **Code Institute**'s Full Stack Web Development course, which I amm commpleting using online resources.
 
 This is a dummy site for Bristol Balloon Fiesta 2018. It is devised as a tool to aid those wishing to find out about the Fiesta, provide them with a list of events taking place during the course of the weekend, and provide a means to apply online to book a balloon flight (with necessary validation uopn submission of the form).
 
