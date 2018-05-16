@@ -2,7 +2,7 @@
 
 ## Overview
 
-This site is my Front End Project for **Code Institute**'s Full Stack Web Development course, which I amm commpleting using online resources.
+This site is my Front End Project for **Code Institute**'s Full Stack Web Development course, which I am completing using online resources.
 
 This is a dummy site for Bristol Balloon Fiesta 2018. It is devised as a tool to aid those wishing to find out about the Fiesta, provide them with a list of events taking place during the course of the weekend, and provide a means to apply online to book a balloon flight (with necessary validation uopn submission of the form).
 
@@ -17,6 +17,8 @@ Currently there are some features which require fine-tuning:
 - The collapsing nav on mobile should minimise once any link is tapped
 - I intend to make the carousel view as full-page in all screen sizes and orientations higher than 992px
 - The collapsing panels on the 'What's On' page jump to the bottom of the panel whereas for good UX it should stay at the top
+- The aside panels vary in width when they shouldn't
+– On the Book a Flight page the form fails to push the aside to the bottom on screen widths narrower than 992px.
 
 Earlier incarnations of this project included a more complex footer panel, a drop-down sub-menu on the navbar and links to many other dummy (but ostensibly empty) pages, all to enhance the overall look and feel of this project. At the advice of my mentor at Code Institute I have removed these features for now as they don't show any 'new' functionality. I hope to reinstate these features at some point in the future.
 

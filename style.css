@@ -125,11 +125,6 @@ span {
     text-align: center;
 }
 
-.navbar-nav > li {
-    /*display: inline-block;*/
-    /*float:none;*/
-}
-
 .navbar-collapse.in {
      overflow-y: visible; 
 }
@@ -736,10 +731,10 @@ select {
 
 #aside-box {
 /*#aside-box.col-sm-4, #aside-box.col-md-4, #aside-box.col-lg-3{*/
-	 margin-left: 0px; 
+	 /*margin-left: 0px; 
 	 margin-right: 0px;
 	 padding-left: 0px;
-	 padding-right: 0px;
+	 padding-right: 0px;*/
 	 background-color: #ff3399;
 	 width: 100%;
 	 height: 100%;
@@ -906,44 +901,48 @@ footer{
 @media only screen and (min-width: 600px) { 
     
 
-#welcome-text {
-	float: left;
-	display: inline-block;
+	#welcome-text {
+		float: left;
+		display: inline-block;
+	}
+
+	/*  adds columns to what's on dropdowns at larger screen widths */
+	.panel-body {
+	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+	    -moz-column-count: 2; /* Firefox */
+	    column-count: 2;
+	    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 30px; /* Firefox */
+	    column-gap: 30px;
+	}
+
+	/*.central-box {
+		margin-left: auto;
+		margin-right: auto; 
+		background-color: white; 
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+	}*/
+
+	.action {
+		width: auto;
+	}
+
+	#second {
+		width: 90%;
+		margin-bottom: 15px;
+	}
+
+	#content {
+		padding: 10px 50px 50px 50px;
+	}
+
+	.navbar-nav > li {
+	   width: 25%;
+	}
+
 }
-
-/*  adds columns to what's on dropdowns at larger screen widths */
-.panel-body {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 30px; /* Firefox */
-    column-gap: 30px;
-}
-
-/*.central-box {
-	margin-left: auto;
-	margin-right: auto; 
-	background-color: white; 
-	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-}*/
-
-.action {
-	width: auto;
-}
-
-#second {
-	width: 90%;
-	margin-bottom: 15px;
-}
-
-#content {
-	padding: 10px 50px 50px 50px;
-}
-
-}  /* keep this one! */
 
 
 /* -----------For desktop: -----------------------------------------------------------------*/
@@ -955,54 +954,54 @@ footer{
 
 @media only screen and (min-width: 992px) {
 
-.fake-container{
-	display: flex;
-	flex-direction: row;
+	.fake-container{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#banner-logo {
+	    left: 25%;
+	    width: 50%;
+	}
+
+	li {
+	    width: 25%;
+	    border-bottom: 0px solid white;
+	}
+
+	/*  adds columns to what's on dropdowns at larger screen widths */
+	.panel-body {
+	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+	    -moz-column-count: 2; /* Firefox */
+	    column-count: 2;
+	    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 30px; /* Firefox */
+	    column-gap: 30px;
+	}
+
+	#aside-box {
+		 max-width: 400px;
+	}
+	/*.central-box {
+		width:80%;
+		margin-left: auto;
+		margin-right: auto; 
+	}*/
+
+
+	#myCollapsingList {
+		width: 100%;
+	}
+
+	.aside-text {
+		padding: 30px ;
+	}
+
+	#second {
+		right: 8px;
+		-ms-transform: rotate(3deg); /* IE 9 */
+	    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+	    transform: rotate(3deg);
+	}
+
 }
-
-#banner-logo {
-    left: 25%;
-    width: 50%;
-}
-
-li {
-    width: 25%;
-    border-bottom: 0px solid white;
-}
-
-/*  adds columns to what's on dropdowns at larger screen widths */
-.panel-body {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 30px; /* Firefox */
-    column-gap: 30px;
-}
-
-#aside-box {
-	 max-width: 400px;
-}
-/*.central-box {
-	width:80%;
-	margin-left: auto;
-	margin-right: auto; 
-}*/
-
-
-#myCollapsingList {
-	width: 100%;
-}
-
-.aside-text {
-	padding: 30px ;
-}
-
-#second {
-	right: 8px;
-	-ms-transform: rotate(3deg); /* IE 9 */
-    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
-    transform: rotate(3deg);
-}
-
-} /* keep this one! */
