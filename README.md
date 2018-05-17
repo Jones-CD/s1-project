@@ -1,13 +1,13 @@
-Bristol Balloon Fiesta 2018
+# Bristol Balloon Fiesta 2018
 
-##Overview
+## Overview
 
-This site is my Front End Project for the **Code Institute**'s Full Stack Web Development course, which I amm commpleting using online resources.
+This site is my Front End Project for **Code Institute**'s Full Stack Web Development course, which I am completing using online resources.
 
 This is a dummy site for Bristol Balloon Fiesta 2018. It is devised as a tool to aid those wishing to find out about the Fiesta, provide them with a list of events taking place during the course of the weekend, and provide a means to apply online to book a balloon flight (with necessary validation uopn submission of the form).
 
 
-##Features
+## Features
 
 I wanted this project to have the look of a professional website: although I have used **bootstrap** I wanted to override it significantly to achieve a much more custom-designed feel.
 
@@ -17,11 +17,13 @@ Currently there are some features which require fine-tuning:
 - The collapsing nav on mobile should minimise once any link is tapped
 - I intend to make the carousel view as full-page in all screen sizes and orientations higher than 992px
 - The collapsing panels on the 'What's On' page jump to the bottom of the panel whereas for good UX it should stay at the top
+- The aside panels vary in width when they shouldn't
+– On the Book a Flight page the form fails to push the aside to the bottom on screen widths narrower than 992px.
 
 Earlier incarnations of this project included a more complex footer panel, a drop-down sub-menu on the navbar and links to many other dummy (but ostensibly empty) pages, all to enhance the overall look and feel of this project. At the advice of my mentor at Code Institute I have removed these features for now as they don't show any 'new' functionality. I hope to reinstate these features at some point in the future.
 
 
-##Tech Used
+## Tech Used
 - [AngularJS](https://angularjs.org/)
     - I have used **AngularJS** to handle page routing, and build custom directives, in particular to enable form validation and submission
 - [jQuery](https://jquery.com/)
@@ -33,5 +35,5 @@ Earlier incarnations of this project included a more complex footer panel, a dro
 - [bower](https://bower.io/)
     - **Bower** is used to manage the installation of libraries and frameworks
 
-##Acknowledgements
+## Acknowledgements
 This is all my own work but I wish to gratefully acknowledge the support and advice of my mentors and tutors at Code Institute, as well as the contribution of my cohort of student colleagues via **slack**'s cloud-based communication channels.
