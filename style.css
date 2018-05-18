@@ -21,6 +21,11 @@ html {
    font-size: 12px; /*declaring root element in pixels*/
 }
 
+#outer-wrapper {
+	height: 0px;
+}
+
+
 h1 {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 700;
@@ -199,6 +204,7 @@ li {
     /*margin-right: -15px;
     margin-left: -15px;*/
     border-bottom: 1px solid white;
+    width: 100%
 }
 
 li:hover {
@@ -910,15 +916,6 @@ footer{
 	    column-gap: 30px;
 	}
 
-	/*.central-box {
-		margin-left: auto;
-		margin-right: auto; 
-		background-color: white; 
-		display: flex;
-		flex-direction: row;
-		align-items: stretch;
-	}*/
-
 	.action {
 		width: auto;
 	}
@@ -932,12 +929,16 @@ footer{
 		padding: 10px 50px 50px 50px;
 	}
 
-	.navbar-nav > li {
-	   width: 25%;
-	}
 
 }
 
+@media only screen and (min-width: 768px) { 
+	li {
+	    width: 25%;
+	    border-bottom: 0px solid white;
+	}
+	
+}
 
 
 /* -----------For desktop: -----------------------------------------------------------------*/
@@ -959,10 +960,7 @@ footer{
 	    width: 50%;
 	}
 
-	li {
-	    width: 25%;
-	    border-bottom: 0px solid white;
-	}
+	
 
 	/*  adds columns to what's on dropdowns at larger screen widths */
 	.panel-body {
@@ -977,13 +975,7 @@ footer{
 	#aside-box {
 		 max-width: 400px;
 	}
-	/*.central-box {
-		width:80%;
-		margin-left: auto;
-		margin-right: auto; 
-	}*/
-
-
+	
 	#myCollapsingList {
 		width: 100%;
 	}
